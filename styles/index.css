@@ -1,1 +1,10 @@
 /*We will override boostrap styles here*/
+.black{
+    background-color: darkgrey;
+}
+section{
+    border:1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
