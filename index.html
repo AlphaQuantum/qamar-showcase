@@ -13,40 +13,89 @@
   </head>
 
   <body>
+    <nav class="bg-gray-800 fixed top-0 left-0 right-0 z-10">
+      <div class="flex items-center justify-between px-4 py-3">
+        <div class="text-white">My Site</div>
+        <div class="md:block md:flex hidden md:items-center">
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-white
+            bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium
+            text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none
+            focus:text-white focus:bg-gray-700">Features</a>
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium
+            text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none
+            focus:text-white focus:bg-gray-700">Pricing</a>
+        </div>
+        <div class="block md:hidden">
+          <button class="flex items-center px-3 py-2 border rounded
+            text-gray-500 border-gray-600 hover:text-white hover:border-white"
+            id="menu-button">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0
+                3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="md:hidden" id="nav-items-dropdown" style="display: none;">
+          <div class="px-2 pt-2 pb-3">
+            <div class="flex flex-col items-stretch">
+              <a href="#" class="block px-3 py-2 rounded-md text-base
+                font-medium text-white bg-gray-900 focus:outline-none
+                focus:text-white focus:bg-gray-700">Home</a>
+              <a href="#" class="block px-3 py-2 rounded-md text-base
+                font-medium text-gray-300 hover:text-white hover:bg-gray-700
+                focus:outline-none focus:text-white focus:bg-gray-700">Features</a>
+              <a href="#" class="block px-3 py-2 rounded-md text-base
+                font-medium text-gray-300 hover:text-white hover:bg-gray-700
+                focus:outline-none focus:text-white focus:bg-gray-700">Pricing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <header>
-      Some stuff
-    </header>
+      <section>
+        Jumbotron Stuff Innit
+        <img src="assets\jumboImg.png" alt="jumboImg.png">
+      </section>
 
-    <section>
-      Jumbotron Stuff Innit
-      <img src="assets\jumboImg.png" alt="jumboImg.png">
-    </section>
+      <section>
+        What've canned up (not drugs i promise)
+      </section>
 
-    <section>
-      What've canned up (not drugs i promise)
-    </section>
+      <section>
+        why choose us
+      </section>
 
-    <section>
-      why choose us
-    </section>
+      <section>
+        the images
+      </section>
 
-    <section>
-      the images
-    </section>
+      <section>
+        our collection
+      </section>
 
-    <section>
-      our collection
-    </section>
+      <section>
+        get started
+      </section>
 
-    <section>
-      get started
-    </section>
+      <footer>
+        footer
+      </footer>
 
-    <footer>
-      footer
-    </footer>
+      <script>
+      
+      const menuButton = document.getElementById('menu-button');
+const navItemsDropdown = document.getElementById('nav-items-dropdown');
 
-  </body>
+menuButton.addEventListener('click', () => {
+  if (navItemsDropdown.style.display === 'none') {
+    navItemsDropdown.style.display = 'block';
+  } else {
+    navItemsDropdown.style.display = 'none';
+  }
+});
 
-</html>
+    </script>
+    </body>
+
+  </html>
