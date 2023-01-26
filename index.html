@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Qamar Drink Showcase">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Anass, Awab">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Qamar</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Qamar Drink Showcase">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Anass, Awab">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontSize: {
+          sm: '0.8rem',
+          base: '1rem',
+          xl: '1.25rem',
+          '2xl': '1.563rem',
+          '3xl': '1.953rem',
+          '4xl': '2.441rem',
+          '5xl': '3.052rem',
+          '6xl': '4rem'
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Qamar</title>
+</head>
 
-  <body>
-    <nav class="bg-gray-800 fixed top-0 left-0 right-0 z-10">
-      <div class="flex items-center justify-between px-4 py-3">
-        <div class="text-white">My Site</div>
-        <div class="md:block md:flex hidden md:items-center">
-          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-white
+<body>
+  <nav class="bg-gray-800 top-0 left-0 right-0 z-10 ">
+    <div class="flex items-center justify-between px-4 py-3">
+      <div class="text-white">My Site</div>
+      <div class="md:block md:flex hidden md:items-center">
+        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-white
             bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium
+        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium
             text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none
             focus:text-white focus:bg-gray-700">Features</a>
-          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium
+        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium
             text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none
             focus:text-white focus:bg-gray-700">Pricing</a>
-        </div>
-        <div class="block md:hidden">
-          <button class="flex items-center px-3 py-2 border rounded
-            text-gray-500 border-gray-600 hover:text-white hover:border-white"
-            id="menu-button">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0
-                3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-            </button>
-          </div>
-        </div>
-        <div class="md:hidden" id="nav-items-dropdown" style="display: none;">
-          <div class="px-2 pt-2 pb-3">
-            <div class="flex flex-col items-stretch">
-              <a href="#" class="block px-3 py-2 rounded-md text-base
+      </div>
+      <div class="block md:hidden">
+        <button class="flex items-center px-3 py-2 border rounded
+            text-gray-500 border-gray-600 hover:text-white hover:border-white" id="menu-button">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0
+                3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="md:hidden" id="nav-items-dropdown" style="display: none;">
+      <div class="px-2 pt-2 pb-3">
+        <div class="flex flex-col items-stretch">
+          <a href="#" class="block px-3 py-2 rounded-md text-base
                 font-medium text-white bg-gray-900 focus:outline-none
                 focus:text-white focus:bg-gray-700">Home</a>
-              <a href="#" class="block px-3 py-2 rounded-md text-base
+          <a href="#" class="block px-3 py-2 rounded-md text-base
                 font-medium text-gray-300 hover:text-white hover:bg-gray-700
                 focus:outline-none focus:text-white focus:bg-gray-700">Features</a>
-              <a href="#" class="block px-3 py-2 rounded-md text-base
+          <a href="#" class="block px-3 py-2 rounded-md text-base
                 font-medium text-gray-300 hover:text-white hover:bg-gray-700
                 focus:outline-none focus:text-white focus:bg-gray-700">Pricing</a>
-            </div>
-          </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
-      <section>
-        Jumbotron Stuff Innit
-        <img src="assets\jumboImg.png" alt="jumboImg.png">
-      </section>
+  <section class="relative">
+    <img class="absolute w-1/2 -z-10 -right-[15rem] -top-[22rem]" src="/assets/Rectangle.svg" alt="">
+    <div class="flex text-center items-center justify-center mt-16 lg:items-center lg:text-left">
+      <div class="uppercase flex-auto lg:ml-[10rem]">
+        <p class="text-6xl font-extrabold">Travel the world <br> with one sip</p>
+        <button
+          class="bg-stone-600 w-[11rem] text-white px-6 py-1 rounded-lg text-2xl hover:bg-stone-500 mt-8 mr-8 lg:mt-5">
+          Buy Now
+        </button>
+        <button class="bg-stone-300 w-[11rem] px-6 py-1 rounded-lg text-2xl hover:bg-stone-400 mt-8 ml-8 lg:mt-5">
+          Contact Us
+        </button>
+      </div>
+      <img class="hidden w-1/3  mr-[8rem] lg:block" src="/assets/jumbo 1.svg" alt="">
+    </div>
+  </section>
 
-      <section>
-        What've canned up (not drugs i promise)
-      </section>
 
-      <section>
-        why choose us
-      </section>
+  <section>
+    <div class="flex flex-col uppercase font-bold text-3xl text-center items-center justify-center">
+      <div>
+        What we have canned up
+      </div>
+      <img class="w-1/3" src="assets/Line 3.svg" alt="">
+      <div class="">
 
-      <section>
-        the images
-      </section>
+      </div>
+    </div>
+  </section>
+  <script>
 
-      <section>
-        our collection
-      </section>
+    const menuButton = document.getElementById('menu-button');
+    const navItemsDropdown = document.getElementById('nav-items-dropdown');
 
-      <section>
-        get started
-      </section>
+    menuButton.addEventListener('click', () => {
+      if (navItemsDropdown.style.display === 'none') {
+        navItemsDropdown.style.display = 'block';
+      } else {
+        navItemsDropdown.style.display = 'none';
+      }
+    });
 
-      <footer>
-        footer
-      </footer>
+  </script>
+</body>
 
-      <script>
-      
-      const menuButton = document.getElementById('menu-button');
-const navItemsDropdown = document.getElementById('nav-items-dropdown');
-
-menuButton.addEventListener('click', () => {
-  if (navItemsDropdown.style.display === 'none') {
-    navItemsDropdown.style.display = 'block';
-  } else {
-    navItemsDropdown.style.display = 'none';
-  }
-});
-
-    </script>
-    </body>
-
-  </html>
+</html>
