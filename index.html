@@ -81,10 +81,11 @@
       <div class="uppercase flex-auto lg:ml-[10rem]">
         <p class="text-6xl font-extrabold">Travel the world <br> with one sip</p>
         <button
-          class="bg-stone-600 w-[11rem] text-white px-6 py-1 rounded-lg text-2xl hover:bg-stone-500 mt-8 mr-8 lg:mt-5">
+          class="bg-stone-600 font-bold w-[12rem] text-white px-6 py-1 rounded-lg text-2xl hover:bg-stone-500 mt-8 mr-8 lg:mt-5">
           Buy Now
         </button>
-        <button class="bg-stone-300 w-[11rem] px-6 py-1 rounded-lg text-2xl hover:bg-stone-400 mt-8 ml-8 lg:mt-5">
+        <button
+          class="bg-stone-300 font-bold w-[12rem] px-6 py-1 rounded-lg text-2xl hover:bg-stone-400 mt-8 ml-8 lg:mt-5">
           Contact Us
         </button>
       </div>
@@ -95,28 +96,75 @@
 
   <section>
     <div class="flex flex-col uppercase font-bold text-3xl text-center items-center justify-center relative">
-      <div>
+      <div class="mb-20 lg:mb-0">
         What we have canned up
       </div>
-      <img class="w-1/3 mb-20" src="assets/Line 3.svg" alt="">
-      <div class="flex flex-row gap-40 text-xl">
+      <img class="hidden mb-20 lg:block lg:w-1/2" src="assets/Line 3.svg" alt="">
+      <button id="prev" class="z-30">
         <img class="absolute w-[3rem] top-[50%] left-[1%]" src="/assets/Arrow-left.svg" alt="">
-        <div class="hidden lg:block">
+      </button>
+      <div class="flex flex-row items-center justify-center gap-40 text-xl" id="carousel">
+        <div class="flex-none hidden -z-10 xl:block xl:right-[-250px]">
+          <img class="" src="/assets/Rectangle 76.svg" alt="">
+          <p>Mango</p>
+        </div>
+        <div class="flex-none hidden -z-10 xl:block">
+          <img class="" src="/assets/Rectangle 76.svg" alt="">
+          <p>Orange</p>
+        </div>
+        <div class="flex-none hidden xl:block">
           <img src="/assets/Rectangle 76.svg" alt="">
           <p>Coffee</p>
         </div>
-        <div class="">
+        <div class="flex-none">
           <img src="/assets/Rectangle 76.svg" alt="">
           <p>Blueberries</p>
         </div>
-        <div class="hidden relative lg:block">
+        <div class="flex-none hidden xl:block">
           <img class="" src="/assets/Rectangle 76.svg" alt="">
           <p>Mint Leaves</p>
         </div>
-        <img class="absolute w-[3rem] top-[50%] right-[1%]" src="/assets/Arrow-right.svg" alt="">
+        <div class="flex-none hidden -z-10 xl:block xl:right-[-250px]">
+          <img class="" src="/assets/Rectangle 76.svg" alt="">
+          <p>Lime</p>
+        </div>
+        <div class="flex-none hidden -z-10 xl:block xl:right-[-250px]">
+          <img class="" src="/assets/Rectangle 76.svg" alt="">
+          <p>Rapberries</p>
+        </div>
       </div>
+      <button id="next" class="z-30">
+        <img class="absolute w-[3rem] top-[50%] right-[1%]" src="/assets/Arrow-right.svg" alt="">
+      </button>
+    </div>
     </div>
   </section>
+
+
+  <!-- doesn't really work but it kinda helped me understand it -->
+  <!-- Chatgpt carousel
+  <section>
+    <div class="relative overflow">
+      <div class="absolute inset-0 flex items-center">
+        <div class="w-full">
+          <ul class="relative list-none flex flex-row" id="carousel">
+            <li class="flex-1">Slide 1</li>
+            <li class="flex-1">Slide 2</li>
+            <li class="flex-1">Slide 3</li>
+            <li class="flex-1">Slide 4</li>
+            <li class="flex-1">Slide 5</li>
+          </ul>
+        </div>
+      </div>
+      <div class="absolute left-0 top-50% transform -translate-y-1/2">
+        <button id="prev" class="bg-gray-500 text-white py-2 px-4 rounded-l">Previous</button>
+      </div>
+      <div class="absolute right-0 top-50% transform -translate-y-1/2">
+        <button id="next" class="bg-gray-500 text-white py-2 px-4 rounded-r">Next</button>
+      </div>
+    </div>
+
+  </section> -->
   <script>
 
     const menuButton = document.getElementById('menu-button');
@@ -133,6 +181,9 @@
     
 
   </script>
+
+  <!-- Local JS Script -->
+  <script src="script.js"></script>
 </body>
 
 </html>
