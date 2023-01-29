@@ -1,11 +1,8 @@
-/* Roboto */
-
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
-/* Noto Sans */
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
 
 .open-sans{
 	font-family: 'Open Sans', sans-serif;
@@ -14,19 +11,15 @@
 .roboto{
 	font-family: 'Roboto', sans-serif;
 }
-
-/* Karla */
-
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+.karla {
+	font-family: "Karla", sans-serif;
+}
 
 body {
 	overflow-x: hidden;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.font-karla {
-	font-family: "Karla", sans-serif;
-}
 
 section {
 	/* border-bottom: 1px solid black; */
