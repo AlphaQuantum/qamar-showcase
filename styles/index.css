@@ -1,8 +1,22 @@
+/* Roboto */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+/* Noto Sans */
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+
+/* Karla */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
 
 body {
 	overflow-x: hidden;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-karla {
+	font-family: "Karla", sans-serif;
 }
 
 section {
@@ -11,7 +25,7 @@ section {
 	/* display: flex; */
 	/* align-items: center; */
 	/* justify-content: center; */
-	height: 90vh;
+	min-height: 90vh;
 }
 
 button {
