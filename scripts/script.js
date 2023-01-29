@@ -1,57 +1,4 @@
-// let nextIndex = 0;
-// let prevIndex = 0;
-// const carousel = document.getElementById("carousel");
-// const prevBtn = document.getElementById("prev");
-// const nextBtn = document.getElementById("next");
-// let carouselStylesnext = window.getComputedStyle(carousel);
-// let carouselTransformnext = carouselStylesnext.getPropertyValue("transform");
-// let carouselStylesprev = window.getComputedStyle(carousel);
-// let carouselTransformprev = carouselStylesprev.getPropertyValue("transform");
-
-// prevBtn.addEventListener("click", () => {
-// 	carouselStylesprev = window.getComputedStyle(carousel);
-// 	carouselTransformprev = carouselStylesprev.getPropertyValue("transform");
-// 	console.log(carouselTransformprev);
-// 	if (
-// 		carouselTransformprev === "none" ||
-// 		carouselTransformprev === "matrix(1, 0, 0, 1, 0, 0)" ||
-// 		carouselTransformprev === "matrix(1, 0, 0, 1, 500, 0)" ||
-// 		carouselTransformnext === "matrix(1, 0, 0, 1, -500, 0)"
-// 	) {
-// 		prevIndex++;
-// 		carousel.style.transform = `translateX(${prevIndex * 500}px)`;
-// 	} else if (carouselTransformprev === "matrix(1, 0, 0, 1, 1000, 0)") {
-// 		nextIndex = 0;
-// 		prevIndex = 0;
-// 		carousel.style.transform = `translateX(${prevIndex * 500}px)`;
-// 	}
-// 	carouselTransformprev = carouselStylesprev.getPropertyValue("transform");
-// 	console.log(carouselTransformprev);
-// 	carouselTransformnext = carouselStylesnext.getPropertyValue("transform");
-// });
-
-// nextBtn.addEventListener("click", () => {
-// 	carouselStylesnext = window.getComputedStyle(carousel);
-// 	carouselTransformnext = carouselStylesnext.getPropertyValue("transform");
-// 	console.log(carouselTransformnext);
-// 	if (
-// 		carouselTransformnext === "none" ||
-// 		carouselTransformnext === "matrix(1, 0, 0, 1, 0, 0)" ||
-// 		carouselTransformnext === "matrix(1, 0, 0, 1, -500, 0)" ||
-// 		carouselTransformprev === "matrix(1, 0, 0, 1, 500, 0)"
-// 	) {
-// 		nextIndex++;
-// 		carousel.style.transform = `translateX(-${nextIndex * 500}px)`;
-// 	} else if (carouselTransformnext === "matrix(1, 0, 0, 1, -1000, 0)") {
-// 		nextIndex = 0;
-// 		prevIndex = 0;
-// 		carousel.style.transform = `translateX(-${nextIndex * 500}px)`;
-// 	}
-// 	carouselTransformnext = carouselStylesnext.getPropertyValue("transform");
-// 	console.log(carouselTransformnext);
-// 	carouselTransformprev = carouselStylesprev.getPropertyValue("transform");
-// 	console.log
-// });
+// Declare Elements
 
 let index = 0;
 const carousel = document.getElementById("carousel");
@@ -60,26 +7,37 @@ const nextBtn = document.getElementById("next");
 let carouselStyles = window.getComputedStyle(carousel);
 let carouselTransform = carouselStyles.getPropertyValue("transform");
 
+// ADD EVENT LISTENERS
+
+// NEXT BUTTON MOVES THE CAROUSEL LEFT
 nextBtn.addEventListener("click", () => {
+	// get the properties of the carousel
 	carouselStyles = window.getComputedStyle(carousel);
+	// extract only the transform property which we will change
 	carouselTransform = carouselStyles.getPropertyValue("transform");
+	// if statement to check position of the carousel (Negative is left, positive is right)
 	if (
 		carouselTransform === "none" ||
 		carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
 		carouselTransform === "matrix(1, 0, 0, 1, -475, 0)" ||
+		// Positions of carousel if prev arrow is used so that user can click next even if he clicks prev first
 		carouselTransform === "matrix(1, 0, 0, 1, 475, 0)" ||
 		carouselTransform === "matrix(1, 0, 0, 1, 950, 0)"
 	) {
+		// if condition is met:
+		// imagine the carousel positions are -2, -1, 0, 1, 2 where 0 is the first items and the numbers on the left and right are next position in that respective direction
+
+		// so if the user clicks next (moves left), the index will become -1
 		index--;
-		carousel.style.setProperty("transform", `translateX(${index * 475}px)`);
-	} else {
-		index = 0;
+		// multiply to get desired pos
 		carousel.style.setProperty("transform", `translateX(${index * 475}px)`);
 	}
-	console.log(carouselStyles);
-	console.log(carouselTransform);
+	// otherwise if the condition is not met, DO NOTHING
+	else {
+	}
 });
 
+// PREV BUTTON MOVES THE CAROUSEL RIGHT
 prevBtn.addEventListener("click", () => {
 	carouselStyles = window.getComputedStyle(carousel);
 	carouselTransform = carouselStyles.getPropertyValue("transform");
@@ -91,10 +49,9 @@ prevBtn.addEventListener("click", () => {
 		carouselTransform === "matrix(1, 0, 0, 1, -475, 0)" ||
 		carouselTransform === "matrix(1, 0, 0, 1, -950, 0)"
 	) {
+		// if the item moves to the right then the position will be 1 (second click will be 2 [which is the max number of clicks we allow])
 		index++;
 		carousel.style.setProperty("transform", `translateX(${index * 475}px)`);
 	} else {
-		index = 0;
-		carousel.style.setProperty("transform", `translateX(${index * 475}px)`);
 	}
 });
