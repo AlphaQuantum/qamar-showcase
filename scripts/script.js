@@ -33,7 +33,25 @@ nextBtn.addEventListener("click", () => {
 		carousel.style.setProperty("transform", `translateX(${index * 475}px)`);
 	}
 	// otherwise if the condition is not met, DO NOTHING
-	else {
+	else if (viewportWidth < 1340) {
+		if (
+			carouselTransform === "none" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -475, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -950, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 1425, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 475, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 950, 0)"
+		) {
+			index--;
+			carousel.style.setProperty(
+				"transform",
+				`translateX(${index * 475}px)`
+			);
+			carouselTransform = carouselStyles.getPropertyValue("transform");
+			console.log(carouselTransform);
+		} else {
+		}
 	}
 });
 
@@ -52,6 +70,31 @@ prevBtn.addEventListener("click", () => {
 		// if the item moves to the right then the position will be 1 (second click will be 2 [which is the max number of clicks we allow])
 		index++;
 		carousel.style.setProperty("transform", `translateX(${index * 475}px)`);
-	} else {
+		carouselTransform = carouselStyles.getPropertyValue("transform");
+		console.log(carouselTransform);
+	} else if (viewportWidth < 1340) {
+		if (
+			carouselTransform === "none" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 475, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 950, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -1425, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -475, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -950, 0)"
+		) {
+			index++;
+			carousel.style.setProperty(
+				"transform",
+				`translateX(${index * 475}px)`
+			);
+			carouselTransform = carouselStyles.getPropertyValue("transform");
+			console.log(carouselTransform);
+		} else {
+			carouselTransform = carouselStyles.getPropertyValue("transform");
+			console.log(carouselTransform);
+		}
 	}
 });
+
+let viewportWidth = window.innerWidth;
+console.log(viewportWidth);
