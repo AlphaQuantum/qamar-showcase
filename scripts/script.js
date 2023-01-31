@@ -51,6 +51,8 @@ nextBtn.addEventListener("click", () => {
 			carouselTransform = carouselStyles.getPropertyValue("transform");
 			console.log(carouselTransform);
 		} else {
+			carouselTransform = carouselStyles.getPropertyValue("transform");
+			console.log(carouselTransform);
 		}
 	}
 });
