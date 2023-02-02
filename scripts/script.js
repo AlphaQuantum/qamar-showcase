@@ -100,3 +100,9 @@ prevBtn.addEventListener("click", () => {
 
 let viewportWidth = window.innerWidth;
 console.log(viewportWidth);
+
+// Disable Image Dragging
+
+document
+	.querySelectorAll("img")
+	.forEach((img) => (img.ondragstart = () => false));
