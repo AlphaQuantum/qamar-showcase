@@ -26,6 +26,7 @@
           colors: {
             "gray-cs": '#4E4E4E',
             "gray-light-cs": '#DADADA',
+            "dark-grayish": '#2e2e2e',
           }
         }
       }
@@ -39,21 +40,25 @@
   <nav class="backdrop-blur-lg drop-shadow-lg bg-gray-50/80 sm:bg-gray-50/10
       top-0 left-0 right-0 z-10 sticky">
     <div class="flex items-center px-4">
-      <div class="text-slate-900 text-2xl font-semibold px-6 karla lg:px-9">Qamar</div>
+      <div class="text-slate-900 text-2xl font-semibold px-6 karla lg:px-9">
+        <a href="#">
+          Qamar
+        </a>
+      </div>
       <div class="md:block md:flex hidden md:items-center">
-        <a href="#" class="px-6 karla lg:px-9 py-3 text-xl
+        <a href="#Ingredients" class="px-6 karla lg:px-9 py-3 text-xl
             text-gray-700 font-medium hover:text-slate-900 focus:outline-none
             focus:text-white focus:bg-slate-100/10 focus:text-black
             hover:bg-slate-300/10 focus:bg-slate-500/10">Ingredients</a>
-        <a href="#" class=" px-6 karla lg:px-9 py-3 text-xl
+        <a href="#benefits" class=" px-6 karla lg:px-9 py-3 text-xl
             text-gray-700 font-medium hover:text-slate-900 focus:outline-none
             focus:text-white focus:bg-slate-100/10 focus:text-black
             hover:bg-slate-300/10 focus:bg-slate-500/10">Benefits</a>
-        <a href="#" class="px-6 karla lg:px-9 py-3 text-xl
+        <a href="#flavours" class="px-6 karla lg:px-9 py-3 text-xl
             text-gray-700 font-medium hover:text-slate-900 focus:outline-none
             focus:text-white focus:bg-slate-100/10 focus:text-black
             hover:bg-slate-300/10 focus:bg-slate-500/10">Flavours</a>
-        <a href="#" class=" px-6 karla lg:px-9 py-3 text-xl
+        <a href="#contact" class=" px-6 karla lg:px-9 py-3 text-xl
             text-gray-700 font-medium hover:text-slate-900 focus:outline-none
             focus:text-white focus:bg-slate-100/10 focus:text-black
             hover:bg-slate-300/10 focus:bg-slate-500/10">Contact Us</a>
@@ -103,21 +108,23 @@
     </svg>
 
     <div class="flex flex-wrap text-center items-center justify-center
-            mt-16 lg:items-center 2xl:text-left lg:mx-[10rem] md:mx-7">
+            mt-16 lg:items-center 2xl:text-left lg:mx-[9.7rem] md:mx-7">
 
       <div class="uppercase flex-auto ">
         <p class="text-[3.8rem] w-[101%] lg:text-7xl font-extrabold
                 open-sans text-gray-900">Travel the world <br> with one sip</p>
         <div class="flex flex-col gap-x-6 justify-center items-center
                 lg:flex-row 2xl:justify-start">
-          <button class="bg-gray-cs rounded-lg shadow-md p-3 px-6 w-48
-                  karla tracking-wide font-bold text-white text-lg my-2
-                  antialiased hover:bg-gray-100 hover:text-black">Buy Now</button>
+          <button class="bg-dark-grayish rounded-lg shadow-md p-3 px-6 w-48
+                  karla tracking-wide font-bold text-white text-xl my-2
+                  antialiased hover:bg-gray-cs">
+            Buy Now
+          </button>
           <button class="bg-gray-light-cs rounded-lg shadow-md p-3 px-6
-                  w-48
-                  karla tracking-wide font-bold text-gray-700 text-lg my-2
-                  antialiased border border-gray-500/20 hover:bg-gray-800
-                  hover:text-white">Contact Us</button>
+                  w-48 karla tracking-wide font-bold text-gray-700 text-xl my-2
+                  antialiased border border-gray-500/20 hover:bg-stone-100">
+            Contact Us
+          </button>
         </div>
       </div>
 
@@ -127,10 +134,10 @@
   </section>
 
   <!-- Carousel -->
-  <section>
+  <section id="Ingredients" class="h-[100vh]">
     <div class="flex flex-col uppercase font-bold text-3xl text-center
             items-center justify-center relative">
-      <div class="mb-5 lg:mb-20 lg:mb-0">
+      <div class="mb-5 mt-20 lg:mb-20 lg:mb-0">
         What we have canned up
       </div>
       <img class="mb-20 lg:block lg:w-1/2" src="assets/Line 3.svg" alt="">
@@ -177,15 +184,15 @@
   </section>
 
   <!-- Why Choose Us -->
-  <section class="bg-stone-300 drop-shadow-lg">
+  <section id="benefits" class="bg-stone-300 drop-shadow-lg">
     <div class="flex flex-col uppercase font-bold text-center items-center justify-center pt-3">
-      <div class="mb-5 text-3xl lg:mb-20 lg:mb-0">
+      <div class="mb-5 mt-10 text-3xl lg:mb-20 lg:mb-0">
         Why choose us
       </div>
       <img class="self-center mb-20 lg:block lg:w-1/2" src="assets/Line
             3.svg" alt="">
       <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-            justify-center items-center">
+            justify-center items-center overflow-hidden">
         <!-- Grid Item #1 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3 lg:ml-8">
           <div class="flex flex-row items-center">
@@ -321,13 +328,13 @@
       </div>
       <div>
         <div class="my-5">
-          <button class="bg-stone-900 rounded-lg shadow-md p-3 px-6 w-48
-                karla tracking-wide font-bold text-white text-lg antialiased
-                hover:bg-stone-700 my-2 mx-3">
+          <button class="bg-dark-grayish rounded-lg shadow-md p-3 px-6 w-48
+                karla tracking-wide font-bold text-white text-xl antialiased
+                hover:bg-gray-cs my-2 mx-3">
             Buy Now
           </button>
           <button class="bg-gray-light-cs rounded-lg shadow-md p-3 px-6 w-48
-                karla tracking-wide font-bold text-gray-700 text-lg antialiased
+                karla tracking-wide font-bold text-gray-700 text-xl antialiased
                 border border-gray-500/20 hover:bg-stone-100 my-2 mx-3">
             Contact Us
           </button>
@@ -354,9 +361,9 @@
   </section>
 
   <!-- Collection -->
-  <section class="bg-stone-300 drop-shadow-lg pt-10 pb-20">
+  <section id="flavours" class="bg-stone-300 drop-shadow-lg pt-10 pb-20">
     <div class="flex flex-col justify-center items-center">
-      <div class=" uppercase font-bold text-center mb-5 text-3xl lg:mb-20
+      <div class="mt-5 uppercase font-bold text-center mb-5 text-3xl lg:mb-20
             lg:mb-0">
         Our Collection
       </div>
@@ -384,9 +391,9 @@
               </div>
             </div>
             <div class="self-center">
-              <button class="bg-stone-900 rounded-lg shadow-md p-3 px-6 w-40 karla
+              <button class="bg-dark-grayish rounded-lg shadow-md p-3 px-6 w-40 karla
                     tracking-wide font-bold text-white text-lg antialiased
-                    hover:bg-stone-700 my-2 mx-3">
+                    hover:bg-gray-cs my-2 mx-3">
                 Buy Now
               </button>
             </div>
@@ -483,7 +490,7 @@
     </div>
   </section>
 
-  <section class="flex justify-center items-center min-h-[75vh]">
+  <section id="contact" class="flex justify-center items-center min-h-[90vh]">
     <div class="flex flex-col justify-center items-center rounded-3xl
           bg-[#2e2e2e] px-20 py-5">
       <div class="text-white font-bold text-5xl mb-5 uppercase
@@ -497,14 +504,12 @@
           world of Flavours
         </p>
       </div>
-      <div class="text-2xl">
+      <div class="text-xl">
         <button class="bg-transparent text-white px-5 py-2 border-2 rounded-lg
-              mx-3
-              hover:bg-white hover:text-black karla font-bold">
+              mx-3 w-48 hover:bg-white hover:text-black karla font-bold">
           Try For Free
         </button>
-        <button class="bg-white px-5 py-2 rounded-lg mx-3 hover:bg-stone-500
-              hover:text-gray-50 karla font-bold">
+        <button class="bg-white px-5 py-2 rounded-lg mx-3 hover:bg-stone-500 w-48 hover:text-gray-50 karla font-bold">
           Contact Us
         </button>
       </div>
