@@ -109,6 +109,12 @@ const invertColor = document.querySelectorAll("#invert-color");
 darkmodeBtn.addEventListener("click", darken);
 
 function darken() {
+	prevBtn.classList.toggle("from-white");
+	prevBtn.classList.toggle("from-[#212121]");
+
+	nextBtn.classList.toggle("from-white");
+	nextBtn.classList.toggle("from-[#212121]");
+
 	// Darkens bg and lightens text
 	darkenItems.forEach((item) => {
 		item.classList.toggle("dark");
