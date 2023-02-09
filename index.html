@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Qamar Drink Showcase">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Anass, Awab">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qamar Drink Showcase">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Anass, Awab">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
     tailwind.config = {
       theme: {
         fontSize: {
@@ -32,568 +32,637 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="styles/index.css">
-  <title>Qamar</title>
-</head>
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Qamar</title>
+  </head>
 
-<body class="bg-slate-50 relative darken-body z-[-100]">
-  <button
-    class="dark-mode dark lighten flex justify-center items-center fixed right-2 bottom-4 min-w-[40px] min-h-[40px] rounded-full drop-shadow-lg z-10 md:right-12 md:bottom-10">
-    <img class="moon invert w-5" src="assets/light-dark/moon-solid.svg" alt="">
-    <img class="moon w-5 hidden" src="assets/light-dark/sun-solid.svg" alt="">
-  </button>
-  <nav class="lighten dark backdrop-blur-lg drop-shadow-lg bg-gray-50/80 sm:bg-gray-50/10
+  <body class="bg-slate-50 relative darken-body z-[-100]">
+    <button
+      class="dark-mode dark lighten flex justify-center items-center fixed
+      right-2 bottom-4 min-w-[40px] min-h-[40px] rounded-full drop-shadow-lg
+      z-10 md:right-12 md:bottom-10">
+      <img class="moon invert w-5" src="assets/light-dark/moon-solid.svg"
+        alt="">
+      <img class="moon w-5 hidden" src="assets/light-dark/sun-solid.svg" alt="">
+    </button>
+    <nav class="lighten dark backdrop-blur-lg drop-shadow-lg bg-gray-50/80
+      sm:bg-gray-50/10
       top-0 left-0 right-0 z-10 sticky">
-    <div class="flex items-center px-4">
-      <div class="text-2xl font-semibold px-6 karla lg:px-9">
-        <a href="#">
-          Qamar
-        </a>
-      </div>
-      <div class="md:block md:flex hidden md:items-center">
-        <a id="remove-hover" href="#benefits" class=" px-6 karla lg:px-9 py-3 text-xl
-             font-medium hover:text-slate-200 focus:outline-none
+      <div class="flex items-center px-4">
+        <div class="text-2xl font-semibold px-6 karla lg:px-9">
+          <a href="#">
+            Qamar
+          </a>
+        </div>
+        <div class="md:block md:flex hidden md:items-center">
+          <a id="remove-hover" href="#home" class="px-2 lg:px-6 karla xl:px-9 py-3
+            text-xl
+            font-medium hover:text-slate-200 focus:outline-none
             focus:text-white focus:bg-slate-100/10
             hover:bg-slate-300/10 focus:bg-slate-500/10">Home</a>
-        <a id="remove-hover" href="#Ingredients" class="px-6 karla lg:px-9 py-3 text-xl
+          <a id="remove-hover" href="#Ingredients" class="px-6 karla lg:px-9
+            py-3 text-xl
             font-medium hover:text-slate-200 focus:outline-none
-           focus:text-white focus:bg-slate-100/10
-           hover:bg-slate-300/10 focus:bg-slate-500/10">Why Choose Us</a>
-        <a id="remove-hover" href="#flavours" class="px-6 karla lg:px-9 py-3 text-xl
-             font-medium hover:text-slate-200 focus:outline-none
+            focus:text-white focus:bg-slate-100/10
+            hover:bg-slate-300/10 focus:bg-slate-500/10">Why Choose Us</a>
+          <a id="remove-hover" href="#flavours" class="px-6 karla lg:px-9 py-3
+            text-xl
+            font-medium hover:text-slate-200 focus:outline-none
             focus:text-white focus:bg-slate-100/10
             hover:bg-slate-300/10 focus:bg-slate-500/10">Our Collection</a>
-        <a id="remove-hover" href="#contact" class=" px-6 karla lg:px-9 py-3 text-xl
-             font-medium hover:text-slate-200 focus:outline-none
+          <a id="remove-hover" href="#contact" class=" px-6 karla lg:px-9 py-3
+            text-xl
+            font-medium hover:text-slate-200 focus:outline-none
             focus:text-white focus:bg-slate-100/10
             hover:bg-slate-300/10 focus:bg-slate-500/10">Contact Us</a>
-      </div>
-      <div class="block md:hidden float-right ml-auto">
-        <button class="flex items-center px-6 lg:px-9 py-3 my-3 border-2 rounded
+        </div>
+        <div class="block md:hidden float-right ml-auto">
+          <button class="flex items-center px-6 lg:px-9 py-3 my-3 border-2
+            rounded
             text-gray-500 border-gray-600 hover:backdrop-blur-md
             hover:border-black hover:shadow-inner" id="menu-button">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0
                 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div class="md:hidden md:none absolute w-full drop-shadow-lg
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="md:hidden md:none absolute w-full drop-shadow-lg
           backdrop-blur-lg lighten dark" id="nav-items-dropdown">
-      <div class="px-2 pt-2 pb-3">
-        <div class="flex flex-col items-stretch">
-          <a id="remove-hover" href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
+          <div class="px-2 pt-2 pb-3">
+            <div class="flex flex-col items-stretch">
+              <a id="remove-hover" href="#home" class="block karla pl-8 lg:px-9 py-3
+                text-xl
                 font-medium hover:text-slate-200
                 focus:outline-none
                 focus:bg-slate-100/10
                 hover:bg-slate-300/10 focus:bg-slate-500/10">Home</a>
-          <a id="remove-hover" href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
+              <a id="remove-hover" href="#Ingredients" class="block karla pl-8 lg:px-9 py-3
+                text-xl
                 font-medium hover:text-slate-200
                 focus:outline-none
                 focus:bg-slate-100/10
-                hover:bg-slate-300/10 focus:bg-slate-500/10">Features</a>
-          <a id="remove-hover" href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
+                hover:bg-slate-300/10 focus:bg-slate-500/10">Why Choose Us</a>
+              <a id="remove-hover" href="#flavours" class="block karla pl-8 lg:px-9 py-3
+                text-xl
                 font-medium hover:text-slate-200
                 focus:outline-none
                 focus:bg-slate-100/10
-                hover:bg-slate-300/10 focus:bg-slate-500/10">Pricing</a>
+                hover:bg-slate-300/10 focus:bg-slate-500/10">Our Collection</a>
+              <a id="remove-hover" href="#contact" class="block karla pl-8 lg:px-9 py-3
+                text-xl
+                font-medium hover:text-slate-200
+                focus:outline-none
+                focus:bg-slate-100/10
+                hover:bg-slate-300/10 focus:bg-slate-500/10">Contact Us</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
+      </nav>
 
-  <!-- Jumbotron -->
-  <section class="darken relative overflow-x-hidden">
-    <!-- <svg class="hidden absolute w-1/2 transform rotate-45 -z-10 my-auto
+      <!-- Jumbotron -->
+      <section class="darken relative overflow-x-hidden" id="home">
+        <!-- <svg class="hidden absolute w-1/2 transform rotate-45 -z-10 my-auto
           -right-1/4 bottom-1/3 md:bottom-[10%] scale-150 md:scale-100" viewBox="0 0 1100 1100" style="display:block">
       <rect width="1100" height="1100" rx="40" ry="40" fill="#cccccc" />
     </svg> -->
+        <img class="hidden absolute w-1/2 -right-36 max-h-[90vh] lg:block"
+          src="assets/Rectangle.svg" alt="">
 
-    <img class="hidden  absolute w-1/2 -right-36 max-h-[90vh] lg:block" src="assets/Rectangle.svg" alt="">
+        <div
+          class="flex flex-wrap text-center items-center justify-center mt-12
+          lg:mt-0 lg:flex-row lg:items-center 2xl:text-left lg:mx-12">
+          <div class="uppercase flex-auto ">
+            <p class="text-[3.8rem] w-[101%] lg:text-6xl font-extrabold
+              open-sans">Travel the world <br> with one <span class="
+                animation"><span>sip</span>
+                <span>sip</span>
+              </span></p>
+            <div class="flex flex-col gap-x-6 justify-center items-center
+              lg:flex-row 2xl:justify-start">
+              <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
+                w-48
+                karla tracking-wide font-bold text-white text-xl my-2
+                antialiased hover:bg-gray-cs">
+                Buy Now
+              </button>
+              <button class="bg-gray-light-cs rounded-[2rem] shadow-md p-3 px-6
+                w-48 karla tracking-wide font-bold text-gray-700 text-xl my-2
+                antialiased border border-gray-500/20 hover:bg-stone-100">
+                Contact Us
+              </button>
+            </div>
+          </div>
 
-    <div
-      class="flex flex-wrap text-center items-center justify-center mt-12 lg:mt-0 lg:flex-row lg:items-center 2xl:text-left lg:mx-12">
-      <div class="uppercase flex-auto ">
-        <p class="text-[3.8rem] w-[101%] lg:text-6xl font-extrabold
-                open-sans">Travel the world <br> with one <span class=" animation"><span>sip</span>
-            <span>sip</span>
-          </span></p>
-        <div class="flex flex-col gap-x-6 justify-center items-center
-                lg:flex-row 2xl:justify-start">
-          <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
-                  w-48
-                  karla tracking-wide font-bold text-white text-xl my-2
-                  antialiased hover:bg-gray-cs">
-            Buy Now
-          </button>
-          <button class="bg-gray-light-cs rounded-[2rem] shadow-md p-3 px-6
-                  w-48 karla tracking-wide font-bold text-gray-700 text-xl my-2
-                  antialiased border border-gray-500/20 hover:bg-stone-100">
-            Contact Us
-          </button>
+          <img class="object-fill mx-auto max-w-full 2xl:w-2/5 drop-shadow-xl"
+            src="assets/images/jumbo.png"
+            alt="2 Coffee Cans">
         </div>
-      </div>
+      </section>
 
-      <img class="object-fill mx-auto max-w-full 2xl:w-2/5 drop-shadow-xl" src="assets/images/jumbo.png"
-        alt="2 Coffee Cans">
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section id="benefits" class="darken light drop-shadow-lg min-h-[100vh]">
-    <div class="flex flex-col uppercase font-bold text-center items-center
+      <!-- Why Choose Us -->
+      <section id="benefits" class="darken light drop-shadow-lg min-h-[100vh]">
+        <div class="flex flex-col uppercase font-bold text-center items-center
           justify-center pt-1">
-      <div class="mb-5 pt-14 text-3xl">
-        Why choose us
-      </div>
-      <div class="grid gap-20 grid-cols-1 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20 xl:grid-cols-3
+          <div class="mb-5 pt-14 text-3xl">
+            Why choose us
+          </div>
+          <div class="grid gap-20 grid-cols-1 lg:grid-cols-2 lg:gap-x-10
+            lg:gap-y-20 xl:grid-cols-3
             justify-center items-center overflow-hidden">
-        <!-- Grid Item #1 -->
-        <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
-          <div class="flex flex-row items-center">
-            <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg" alt="">
-            <div>
-              <p class="text-left text-2xl karla">Sugar Free</p>
+            <!-- Grid Item #1 -->
+            <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
+              <div class="flex flex-row items-center">
+                <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg"
+                  alt="">
+                <div>
+                  <p class="text-left text-2xl karla">Sugar Free</p>
+                </div>
+              </div>
+              <div class="text-base font-light text-left ml-5 normal-case mb-5
+                max-w-xs karla">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus
+                labore deleniti eum accusamus laboriosam,
+                architecto, in alias necessitatibus aut magnam facilis enim
+                fugit
+                ut nemo mollitia eius laborum quidem.
+                Necessitatibus, fugiat error deserunt, facilis, repellendus
+                quisquam iure officia doloribus quia minus
+                quibusdam labore quam totam.
+              </div>
+            </div>
+            <!-- Grid Item #2 -->
+            <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
+              <div class="flex flex-row items-center">
+                <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg"
+                  alt="">
+                <div>
+                  <p class="text-left text-2xl karla">
+                    Zero Calories
+                  </p>
+                </div>
+              </div>
+              <div class="text-base font-light text-left ml-5 normal-case mb-5
+                max-w-xs karla">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus
+                labore deleniti eum accusamus laboriosam,
+                architecto, in alias necessitatibus aut magnam facilis enim
+                fugit
+                ut nemo mollitia eius laborum quidem.
+                Necessitatibus, fugiat error deserunt, facilis, repellendus
+                quisquam iure officia doloribus quia minus
+                quibusdam labore quam totam.
+              </div>
+            </div>
+            <!-- Grid Item #3 -->
+            <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
+              <div class="flex flex-row items-center">
+                <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg"
+                  alt="">
+                <div>
+                  <p class="text-left text-2xl karla">
+                    Gluten Free
+                  </p>
+                </div>
+              </div>
+              <div class="text-base font-light text-left ml-5 normal-case mb-5
+                max-w-xs karla">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus
+                labore deleniti eum accusamus laboriosam,
+                architecto, in alias necessitatibus aut magnam facilis enim
+                fugit
+                ut nemo mollitia eius laborum quidem.
+                Necessitatibus, fugiat error deserunt, facilis, repellendus
+                quisquam iure officia doloribus quia minus
+                quibusdam labore quam totam.
+              </div>
+            </div>
+            <!-- Grid Item #4 -->
+            <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
+              <div class="flex flex-row items-center">
+                <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg"
+                  alt="">
+                <div>
+                  <p class="text-left text-2xl karla">
+                    Naturally <br> Flavoured
+                  </p>
+                </div>
+              </div>
+              <div class="text-base font-light text-left ml-5 normal-case mb-5
+                max-w-xs karla">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus
+                labore deleniti eum accusamus laboriosam,
+                architecto, in alias necessitatibus aut magnam facilis enim
+                fugit
+                ut nemo mollitia eius laborum quidem.
+                Necessitatibus, fugiat error deserunt, facilis, repellendus
+                quisquam iure officia doloribus quia minus
+                quibusdam labore quam totam.
+              </div>
+            </div>
+            <!-- Grid Item #5 -->
+            <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
+              <div class="flex flex-row items-center">
+                <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg"
+                  alt="">
+                <div>
+                  <p class="text-left text-2xl karla">Sugar Free</p>
+                </div>
+              </div>
+              <div class="text-base font-light text-left ml-5 normal-case mb-5
+                max-w-xs karla">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus
+                labore deleniti eum accusamus laboriosam,
+                architecto, in alias necessitatibus aut magnam facilis enim
+                fugit
+                ut nemo mollitia eius laborum quidem.
+                Necessitatibus, fugiat error deserunt, facilis, repellendus
+                quisquam iure officia doloribus quia minus
+                quibusdam labore quam totam.
+              </div>
+            </div>
+            <!-- Grid Item #6 -->
+            <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
+              <div class="flex flex-row items-center">
+                <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg"
+                  alt="">
+                <div>
+                  <p class="text-left text-2xl karla">Sugar Free</p>
+                </div>
+              </div>
+              <div class="text-base font-light text-left ml-5 normal-case mb-5
+                max-w-xs karla">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus
+                labore deleniti eum accusamus laboriosam,
+                architecto, in alias necessitatibus aut magnam facilis enim
+                fugit
+                ut nemo mollitia eius laborum quidem.
+                Necessitatibus, fugiat error deserunt, facilis, repellendus
+                quisquam iure officia doloribus quia minus
+                quibusdam labore quam totam.
+              </div>
             </div>
           </div>
-          <div class="text-base font-light text-left ml-5 normal-case mb-5
-                max-w-xs karla">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus
-            labore deleniti eum accusamus laboriosam,
-            architecto, in alias necessitatibus aut magnam facilis enim
-            fugit
-            ut nemo mollitia eius laborum quidem.
-            Necessitatibus, fugiat error deserunt, facilis, repellendus
-            quisquam iure officia doloribus quia minus
-            quibusdam labore quam totam.
-          </div>
-        </div>
-        <!-- Grid Item #2 -->
-        <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
-          <div class="flex flex-row items-center">
-            <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg" alt="">
-            <div>
-              <p class="text-left text-2xl karla">
-                Zero Calories
-              </p>
-            </div>
-          </div>
-          <div class="text-base font-light text-left ml-5 normal-case mb-5
-                max-w-xs karla">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus
-            labore deleniti eum accusamus laboriosam,
-            architecto, in alias necessitatibus aut magnam facilis enim
-            fugit
-            ut nemo mollitia eius laborum quidem.
-            Necessitatibus, fugiat error deserunt, facilis, repellendus
-            quisquam iure officia doloribus quia minus
-            quibusdam labore quam totam.
-          </div>
-        </div>
-        <!-- Grid Item #3 -->
-        <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
-          <div class="flex flex-row items-center">
-            <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg" alt="">
-            <div>
-              <p class="text-left text-2xl karla">
-                Gluten Free
-              </p>
-            </div>
-          </div>
-          <div class="text-base font-light text-left ml-5 normal-case mb-5
-                max-w-xs karla">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus
-            labore deleniti eum accusamus laboriosam,
-            architecto, in alias necessitatibus aut magnam facilis enim
-            fugit
-            ut nemo mollitia eius laborum quidem.
-            Necessitatibus, fugiat error deserunt, facilis, repellendus
-            quisquam iure officia doloribus quia minus
-            quibusdam labore quam totam.
-          </div>
-        </div>
-        <!-- Grid Item #4 -->
-        <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
-          <div class="flex flex-row items-center">
-            <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg" alt="">
-            <div>
-              <p class="text-left text-2xl karla">
-                Naturally <br> Flavoured
-              </p>
-            </div>
-          </div>
-          <div class="text-base font-light text-left ml-5 normal-case mb-5
-                max-w-xs karla">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus
-            labore deleniti eum accusamus laboriosam,
-            architecto, in alias necessitatibus aut magnam facilis enim
-            fugit
-            ut nemo mollitia eius laborum quidem.
-            Necessitatibus, fugiat error deserunt, facilis, repellendus
-            quisquam iure officia doloribus quia minus
-            quibusdam labore quam totam.
-          </div>
-        </div>
-        <!-- Grid Item #5 -->
-        <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
-          <div class="flex flex-row items-center">
-            <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg" alt="">
-            <div>
-              <p class="text-left text-2xl karla">Sugar Free</p>
-            </div>
-          </div>
-          <div class="text-base font-light text-left ml-5 normal-case mb-5
-                max-w-xs karla">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus
-            labore deleniti eum accusamus laboriosam,
-            architecto, in alias necessitatibus aut magnam facilis enim
-            fugit
-            ut nemo mollitia eius laborum quidem.
-            Necessitatibus, fugiat error deserunt, facilis, repellendus
-            quisquam iure officia doloribus quia minus
-            quibusdam labore quam totam.
-          </div>
-        </div>
-        <!-- Grid Item #6 -->
-        <div class="bg-white rounded-lg drop-shadow-xl w-max pr-3">
-          <div class="flex flex-row items-center">
-            <img class="p-3 w-20 " src="assets/Rectangle 38 (small).svg" alt="">
-            <div>
-              <p class="text-left text-2xl karla">Sugar Free</p>
-            </div>
-          </div>
-          <div class="text-base font-light text-left ml-5 normal-case mb-5
-                max-w-xs karla">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus
-            labore deleniti eum accusamus laboriosam,
-            architecto, in alias necessitatibus aut magnam facilis enim
-            fugit
-            ut nemo mollitia eius laborum quidem.
-            Necessitatibus, fugiat error deserunt, facilis, repellendus
-            quisquam iure officia doloribus quia minus
-            quibusdam labore quam totam.
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="my-5">
-          <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
+          <div>
+            <div class="my-5">
+              <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
                 w-48
                 karla tracking-wide font-bold text-white text-xl antialiased
                 hover:bg-gray-cs my-2 mx-3">
-            Buy Now
-          </button>
-          <button class="bg-gray-light-cs rounded-[2rem] shadow-md p-3 px-6
+                Buy Now
+              </button>
+              <button class="bg-gray-light-cs rounded-[2rem] shadow-md p-3 px-6
                 w-48
                 karla tracking-wide font-bold text-gray-700 text-xl
                 antialiased
                 border border-gray-500/20 hover:bg-stone-100 my-2 mx-3">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel -->
+      <section id="Ingredients" class="darken min-h-[75vh] py-10">
+        <div class="relative flex flex-col uppercase font-bold text-center
+          items-center justify-center overflow-hidden">
+          <div class="text-2xl mt-5 lg:text-3xl lg:mb-20 lg:mb-0">
+            What we have canned up
+          </div>
+          <img id="invert-color" class="mb-10 w-96 lg:mb-20 lg:w-1/2"
+            src="assets/Line 3.svg" alt="">
+          <button id="prev"
+            class=" absolute bg-gradient-to-r from-white p-2 z-[1] w-8
+            transition-none min-h-[400px] top-[20%] left-[0] lg:w-8
+            lg:top-[25%]">
+            <img id="invert-color" src="assets/Arrow-left.svg" alt="">
+          </button>
+          <div class="flex flex-row items-center justify-center gap-20
+            text-xl min-w-max" id="carousel">
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Mango.png" alt="">
+              <p>Mango</p>
+            </div>
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Orange.png" alt="">
+              <p>Orange</p>
+            </div>
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Coffee Beans.png"
+                alt="">
+              <p>Coffee</p>
+            </div>
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Blueberries.png" alt="">
+              <p>Blueberries</p>
+            </div>
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Mint-leaves.png" alt="">
+              <p>Mint Leaves</p>
+            </div>
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Lime.png" alt="">
+              <p>Lime</p>
+            </div>
+            <div class="flex-none karla">
+              <img class="w-80 h-60" src="assets/images/Raspberries.png" alt="">
+              <p>Raspberries</p>
+            </div>
+          </div>
+          <button id="next"
+            class=" absolute bg-gradient-to-l from-white px-2 z-[1] w-8
+            transition-none min-h-[400px] top-[20%] right-[0] lg:w-8
+            lg:top-[25%]">
+            <img id="invert-color" src="assets/Arrow-right.svg" alt="">
+          </button>
+          <div class="grid grid-cols-2 gap-4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Can -->
+    <section class="darken relative min-h-[60vh] flex justify-center
+      items-center z-[-1]
+      lg:h-[100vh]">
+      <img class="hidden absolute w-1/2 -left-[17rem] lg:block"
+        src="assets/Big-Rectangle left.svg" alt="">
+      <div class="grid grid-cols-2 z-[2] w-2/3">
+        <div class="h-min border-8 border-b-0 border-r-4 border-[#3f586a]">
+          <img class="" src="assets/images/grid_citrus.png" alt="">
+        </div>
+        <div class="h-min border-8 border-b-0 border-l-4 border-[#3f586a]">
+          <img class="" src="assets/images/grid_coffee.png" alt="">
+        </div>
+        <div class="h-min border-8 border-r-4 border-[#3f586a]">
+          <img class="" src="assets/images/grid_moroccan.png" alt="">
+        </div>
+        <div class="h-min border-8 border-l-4 border-[#3f586a]">
+          <img class="" src="assets/images/grid_berries.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section id="flavours" class="darken light drop-shadow-lg pt-10 pb-20">
+      <div class="flex flex-col justify-center items-center overflow-hidden">
+        <div class="mt-5 uppercase font-bold text-center mb-5 text-3xl
+          lg:mb-20
+          lg:mb-0">
+          Our Collection
+        </div>
+        <img class="self-center mb-5 w-96 lg:block lg:w-1/2" src="assets/Line
+          3.svg" alt="">
+        <div class="grid gap-5 grid-cols-1 overflow-hidden sm:grid-cols-2
+          xl:grid-cols-4">
+          <!-- Drink #1 -->
+          <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
+            <img class="w-60 p-10" src="assets/images/coffee.png" alt="">
+            <div class="flex flex-col">
+              <div>
+                <h1 class="text-3xl uppercase ml-5">Arabia</h1>
+              </div>
+              <div class="text-gray-500 karla font-light ml-5 mb-1">
+                Arabian Coffee with <br> fine powdered cardamom
+              </div>
+              <div class="flex flex-row">
+                <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <div class="font-bold text-2xl ml-5">
+                  $1.99
+                </div>
+              </div>
+              <div class="self-center">
+                <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
+                  w-40 karla
+                  tracking-wide font-bold text-white text-lg antialiased
+                  hover:bg-gray-cs my-2 mx-3">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Drink #2 -->
+          <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
+            <img class="w-60 p-10" src="assets/images/citrus.png" alt="">
+            <div class="flex flex-col">
+              <div>
+                <h1 class="text-3xl uppercase ml-5">Citrus</h1>
+              </div>
+              <div class="text-gray-500 karla font-light ml-5 mb-1">
+                Mix of Citrus fruits to acidify <br> your stomach... DIE
+              </div>
+              <div class="flex flex-row">
+                <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <div class="font-bold text-2xl ml-5">
+                  $1.99
+                </div>
+              </div>
+              <div class="self-center">
+                <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
+                  w-40 karla
+                  tracking-wide font-bold text-white text-lg antialiased
+                  hover:bg-gray-cs my-2 mx-3">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Drink #3 -->
+          <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
+            <img class="w-60 p-10" src="assets/images/moroccan.png" alt="">
+            <div class="flex flex-col">
+              <div>
+                <h1 class="text-3xl uppercase ml-5">Morrocan</h1>
+              </div>
+              <div class="text-gray-500 karla font-light ml-5 mb-1">
+                Idk the details of this <br> Anass can type it
+              </div>
+              <div class="flex flex-row">
+                <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <div class="font-bold text-2xl ml-5">
+                  $1.99
+                </div>
+              </div>
+              <div class="self-center">
+                <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
+                  w-40 karla
+                  tracking-wide font-bold text-white text-lg antialiased
+                  hover:bg-gray-cs my-2 mx-3">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div> <!-- Drink #4 -->
+          <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
+            <img class="w-60 p-10" src="assets/images/berries.png" alt="">
+            <div class="flex flex-col">
+              <div>
+                <h1 class="text-3xl uppercase ml-5">Berries</h1>
+              </div>
+              <div class="text-gray-500 karla font-light ml-5 mb-1">
+                Fruity Berries so you can <br> taste the natural sugar
+              </div>
+              <div class="flex flex-row">
+                <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg"
+                  alt="">
+                <div class="font-bold text-2xl ml-5">
+                  $1.99
+                </div>
+              </div>
+              <div class="self-center">
+                <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
+                  w-40 karla
+                  tracking-wide font-bold text-white text-lg antialiased
+                  hover:bg-gray-cs my-2 mx-3">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="darken flex justify-center items-center
+      min-h-[50vh] open-sans">
+      <div class="lighten flex flex-col justify-center items-center text-center
+        shadow-xl
+        dark flex-shrink-0 rounded-xl lg:rounded-md px-5 lg:px-20 lg:py-5
+        xl:rounded-3xl">
+        <div class="darken-text font-bold text-xl my-2 uppercase
+          drop-shadow-2xl lg:text-5xl">
+          <p>Get Started With Qamar</p>
+        </div>
+        <div class="">
+          <p class="darkenish-text text-base whitespace-pre-line
+            md:whitespace-normal font-bold karla lg:text-xl">
+            Our stuff is the best stuff habibi.
+            Trust me Akhi/Ukhti, Explore
+            our world of Flavours</p>
+        </div>
+        <div class="my-5">
+          <button
+            class="border lighten dark rounded-[2rem] shadow-md p-3 px-6 w-30
+            karla tracking-wide font-bold text-base antialiased hover:bg-gray-cs
+            my-2 mx-3 lg:w-48 lg:text-xl">
+            Try for Free
+          </button>
+          <button
+            class="bg-gray-light-cs text-black darken rounded-[2rem] shadow-md
+            p-3 px-6 w-30 karla tracking-wide font-bold text-base antialiased
+            hover:bg-stone-100 my-2 mx-3 lg:w-48 lg:text-xl">
             Contact Us
           </button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Carousel -->
-  <section id="Ingredients" class="darken min-h-[75vh] py-10">
-    <div class="relative flex flex-col uppercase font-bold text-center
-            items-center justify-center overflow-hidden">
-      <div class="text-2xl mt-5 lg:text-3xl lg:mb-20 lg:mb-0">
-        What we have canned up
-      </div>
-      <img id="invert-color" class="mb-10 w-96 lg:mb-20 lg:w-1/2" src="assets/Line 3.svg" alt="">
-      <button id="prev"
-        class=" absolute bg-gradient-to-r from-white p-2 z-[1] w-8 transition-none min-h-[400px] top-[20%] left-[0] lg:w-8 lg:top-[25%]">
-        <img id="invert-color" src="assets/Arrow-left.svg" alt="">
-      </button>
-      <div class="flex flex-row items-center justify-center gap-20
-              text-xl min-w-max" id="carousel">
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Mango.png" alt="">
-          <p>Mango</p>
+    <footer class="lighten dark pb-4">
+      <div class="flex flex-row justify-center items-center mb-10 lg:items-start
+        lg:flex-col">
+        <!-- Github -->
+        <div class="pt-10 px-2 lg:px-20">
+          <a href=" #">
+            <div class="inline">
+              <img id="invert-color" class="invert w-[25px] inline mr-2"
+                src="assets/images/Github.svg" alt="">
+            </div>
+            <div class="hidden karla lg:inline">Github</div>
+          </a>
         </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Orange.png" alt="">
-          <p>Orange</p>
+        <!-- LinkedIn -->
+        <div class="pt-10 px-2 lg:pt-2 lg:px-20">
+          <a href=" #">
+            <div class="inline">
+              <img id="invert-color" class="invert w-[25px] inline mr-2"
+                src="assets/images/linkedin.svg" alt="">
+            </div>
+            <div class="hidden karla lg:inline">LinkedIn</div>
+          </a>
         </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Coffee Beans.png" alt="">
-          <p>Coffee</p>
+        <!-- Twitter -->
+        <div class="pt-10 px-2 lg:pt-2 lg:px-20">
+          <a href=" #">
+            <div class="inline">
+              <img id="invert-color" class="invert w-[25px] inline mr-2"
+                src="assets/images/twitter.svg" alt="">
+            </div>
+            <div class="hidden karla lg:inline">Twitter</div>
+          </a>
         </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Blueberries.png" alt="">
-          <p>Blueberries</p>
+        <!-- Instagram -->
+        <div class="pt-10 px-2 lg:pt-2 lg:px-20">
+          <a href=" #">
+            <div class="inline">
+              <img id="invert-color" class="invert w-[25px] inline mr-2"
+                src="assets/images/instagram.svg" alt="">
+            </div>
+            <div class="hidden karla lg:inline">Instagram</div>
+          </a>
         </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Mint-leaves.png" alt="">
-          <p>Mint Leaves</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Lime.png" alt="">
-          <p>Lime</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Raspberries.png" alt="">
-          <p>Raspberries</p>
+        <!-- Facebook -->
+        <div class="pt-10 px-2 lg:pt-2 lg:px-20">
+          <a href=" #">
+            <div class="inline">
+              <img id="invert-color" class="invert w-[25px] inline mr-2"
+                src="assets/images/facebook.svg" alt="">
+            </div>
+            <div class="hidden karla lg:inline">Facebook</div>
+          </a>
         </div>
       </div>
-      <button id="next"
-        class=" absolute bg-gradient-to-l from-white px-2 z-[1]  w-8 transition-none min-h-[400px] top-[20%] right-[0] lg:w-8 lg:top-[25%]">
-        <img id="invert-color" src="assets/Arrow-right.svg" alt="">
-      </button>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="text-center karla">
+        <p class="font-bold">Qamar LTD.</p>
+        Copyrights reserved &copy; 2023
       </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Grid Can -->
-  <section class="darken relative min-h-[60vh] flex justify-center items-center z-[-1]
-        lg:h-[100vh]">
-    <img class="hidden absolute w-1/2 -left-[17rem] lg:block" src="assets/Big-Rectangle left.svg" alt="">
-    <div class="grid grid-cols-2 z-[2] w-2/3">
-      <div class="h-min border-8 border-b-0 border-r-4 border-[#3f586a]">
-        <img class="" src="assets/images/grid_citrus.png" alt="">
-      </div>
-      <div class="h-min border-8 border-b-0 border-l-4 border-[#3f586a]">
-        <img class="" src="assets/images/grid_coffee.png" alt="">
-      </div>
-      <div class="h-min border-8 border-r-4 border-[#3f586a]">
-        <img class="" src="assets/images/grid_moroccan.png" alt="">
-      </div>
-      <div class="h-min border-8 border-l-4 border-[#3f586a]">
-        <img class="" src="assets/images/grid_berries.png" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- Collection -->
-  <section id="flavours" class="darken light drop-shadow-lg pt-10 pb-20">
-    <div class="flex flex-col justify-center items-center overflow-hidden">
-      <div class="mt-5 uppercase font-bold text-center mb-5 text-3xl
-            lg:mb-20
-            lg:mb-0">
-        Our Collection
-      </div>
-      <img class="self-center mb-5 w-96 lg:block lg:w-1/2" src="assets/Line 3.svg" alt="">
-      <div class="grid gap-5 grid-cols-1 overflow-hidden sm:grid-cols-2 
-            xl:grid-cols-4">
-        <!-- Drink #1 -->
-        <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
-          <img class="w-60 p-10" src="assets/images/coffee.png" alt="">
-          <div class="flex flex-col">
-            <div>
-              <h1 class="text-3xl uppercase ml-5">Arabia</h1>
-            </div>
-            <div class="text-gray-500 karla font-light ml-5 mb-1">
-              Arabian Coffee with <br> fine powdered cardamom
-            </div>
-            <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <div class="font-bold text-2xl ml-5">
-                $1.99
-              </div>
-            </div>
-            <div class="self-center">
-              <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
-                    w-40 karla
-                    tracking-wide font-bold text-white text-lg antialiased
-                    hover:bg-gray-cs my-2 mx-3">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Drink #2 -->
-        <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
-          <img class="w-60 p-10" src="assets/images/citrus.png" alt="">
-          <div class="flex flex-col">
-            <div>
-              <h1 class="text-3xl uppercase ml-5">Citrus</h1>
-            </div>
-            <div class="text-gray-500 karla font-light ml-5 mb-1">
-              Mix of Citrus fruits to acidify <br> your stomach... DIE
-            </div>
-            <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <div class="font-bold text-2xl ml-5">
-                $1.99
-              </div>
-            </div>
-            <div class="self-center">
-              <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
-                    w-40 karla
-                    tracking-wide font-bold text-white text-lg antialiased
-                    hover:bg-gray-cs my-2 mx-3">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Drink #3 -->
-        <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
-          <img class="w-60 p-10" src="assets/images/moroccan.png" alt="">
-          <div class="flex flex-col">
-            <div>
-              <h1 class="text-3xl uppercase ml-5">Morrocan</h1>
-            </div>
-            <div class="text-gray-500 karla font-light ml-5 mb-1">
-              Idk the details of this <br> Anass can type it
-            </div>
-            <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <div class="font-bold text-2xl ml-5">
-                $1.99
-              </div>
-            </div>
-            <div class="self-center">
-              <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
-                    w-40 karla
-                    tracking-wide font-bold text-white text-lg antialiased
-                    hover:bg-gray-cs my-2 mx-3">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div> <!-- Drink #4 -->
-        <div class="bg-white rounded-xl drop-shadow-2xl px-5 pb-5">
-          <img class="w-60 p-10" src="assets/images/berries.png" alt="">
-          <div class="flex flex-col">
-            <div>
-              <h1 class="text-3xl uppercase ml-5">Berries</h1>
-            </div>
-            <div class="text-gray-500 karla font-light ml-5 mb-1">
-              Fruity Berries so you can <br> taste the natural sugar
-            </div>
-            <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <div class="font-bold text-2xl ml-5">
-                $1.99
-              </div>
-            </div>
-            <div class="self-center">
-              <button class="bg-dark-grayish rounded-[2rem] shadow-md p-3 px-6
-                    w-40 karla
-                    tracking-wide font-bold text-white text-lg antialiased
-                    hover:bg-gray-cs my-2 mx-3">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="darken flex justify-center items-center
-        min-h-[50vh] open-sans">
-    <div class="lighten flex flex-col justify-center items-center text-center shadow-xl
-          dark flex-shrink-0 rounded-xl lg:rounded-md px-5 lg:px-20 lg:py-5
-          xl:rounded-3xl">
-      <div class="darken-text font-bold text-xl my-2 uppercase
-            drop-shadow-2xl lg:text-5xl">
-        <p>Get Started With Qamar</p>
-      </div>
-      <div class="">
-        <p class="darkenish-text text-base whitespace-pre-line
-              md:whitespace-normal font-bold karla lg:text-xl">
-          Our stuff is the best stuff habibi.
-          Trust me Akhi/Ukhti, Explore
-          our world of Flavours</p>
-      </div>
-      <div class="my-5">
-        <button
-          class="border lighten dark rounded-[2rem] shadow-md p-3 px-6 w-30 karla tracking-wide font-bold text-base antialiased hover:bg-gray-cs my-2 mx-3 lg:w-48 lg:text-xl">
-          Try for Free
-        </button>
-        <button
-          class="bg-gray-light-cs text-black darken rounded-[2rem] shadow-md p-3 px-6 w-30 karla tracking-wide font-bold text-base antialiased hover:bg-stone-100 my-2 mx-3 lg:w-48 lg:text-xl">
-          Contact Us
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="lighten dark pb-4">
-    <div class="flex flex-row justify-center items-center mb-10 lg:items-start lg:flex-col">
-      <!-- Github -->
-      <div class="pt-10 px-2 lg:px-20">
-        <a href=" #">
-          <div class="inline">
-            <img id="invert-color" class="invert w-[25px] inline mr-2" src="assets/images/Github.svg" alt="">
-          </div>
-          <div class="hidden karla lg:inline">Github</div>
-        </a>
-      </div>
-      <!-- LinkedIn -->
-      <div class="pt-10 px-2 lg:pt-2 lg:px-20">
-        <a href=" #">
-          <div class="inline">
-            <img id="invert-color" class="invert w-[25px] inline mr-2" src="assets/images/linkedin.svg" alt="">
-          </div>
-          <div class="hidden karla lg:inline">LinkedIn</div>
-        </a>
-      </div>
-      <!-- Twitter -->
-      <div class="pt-10 px-2 lg:pt-2 lg:px-20">
-        <a href=" #">
-          <div class="inline">
-            <img id="invert-color" class="invert w-[25px] inline mr-2" src="assets/images/twitter.svg" alt="">
-          </div>
-          <div class="hidden karla lg:inline">Twitter</div>
-        </a>
-      </div>
-      <!-- Instagram -->
-      <div class="pt-10 px-2 lg:pt-2 lg:px-20">
-        <a href=" #">
-          <div class="inline">
-            <img id="invert-color" class="invert w-[25px] inline mr-2" src="assets/images/instagram.svg" alt="">
-          </div>
-          <div class="hidden karla lg:inline">Instagram</div>
-        </a>
-      </div>
-      <!-- Facebook -->
-      <div class="pt-10 px-2 lg:pt-2 lg:px-20">
-        <a href=" #">
-          <div class="inline">
-            <img id="invert-color" class="invert w-[25px] inline mr-2" src="assets/images/facebook.svg" alt="">
-          </div>
-          <div class="hidden karla lg:inline">Facebook</div>
-        </a>
-      </div>
-    </div>
-    <div class="text-center karla">
-      <p class="font-bold">Qamar LTD.</p>
-      Copyrights reserved &copy; 2023
-    </div>
-  </footer>
-  <script>
+    </footer>
+    <script>
     const menuButton = document.getElementById('menu-button');
     const navItemsDropdown = document.getElementById('nav-items-dropdown');
 
@@ -617,7 +686,7 @@
     // Call the function on window resize
     window.addEventListener('resize', handleNavItemsDropdown);
   </script>
-  <script src="scripts\script.js"></script>
-</body>
+    <script src="scripts\script.js"></script>
+  </body>
 
 </html>
