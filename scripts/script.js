@@ -11,26 +11,26 @@ nextBtn.addEventListener("click", () => {
 	if (
 		carouselTransform === "none" ||
 		carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, -470, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, 470, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, 940, 0)"
+		carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, 960, 0)"
 	) {
 		index--;
-		carousel.style.setProperty("transform", `translateX(${index * 470}px)`);
+		carousel.style.setProperty("transform", `translateX(${index * 480}px)`);
 	} else if (viewportWidth < 1340) {
 		if (
 			carouselTransform === "none" ||
 			carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -470, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -940, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 1410, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 470, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 940, 0)"
+			carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -960, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 1440, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 960, 0)"
 		) {
 			index--;
 			carousel.style.setProperty(
 				"transform",
-				`translateX(${index * 470}px)`
+				`translateX(${index * 480}px)`
 			);
 			carouselTransform = carouselStyles.getPropertyValue("transform");
 			console.log(carouselTransform);
@@ -49,28 +49,28 @@ prevBtn.addEventListener("click", () => {
 	if (
 		carouselTransform === "none" ||
 		carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, 470, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, -470, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, -940, 0)"
+		carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, -960, 0)"
 	) {
 		index++;
-		carousel.style.setProperty("transform", `translateX(${index * 470}px)`);
+		carousel.style.setProperty("transform", `translateX(${index * 480}px)`);
 		carouselTransform = carouselStyles.getPropertyValue("transform");
 		console.log(carouselTransform);
 	} else if (viewportWidth < 1340) {
 		if (
 			carouselTransform === "none" ||
 			carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 470, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 940, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -1410, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -470, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -940, 0)"
+			carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 960, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -1440, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -960, 0)"
 		) {
 			index++;
 			carousel.style.setProperty(
 				"transform",
-				`translateX(${index * 470}px)`
+				`translateX(${index * 480}px)`
 			);
 			carouselTransform = carouselStyles.getPropertyValue("transform");
 			console.log(carouselTransform);

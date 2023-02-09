@@ -15,8 +15,12 @@
 	font-family: "Karla", sans-serif;
 }
 
-.grayscale-full {
-	filter: grayscale(100);
+.grid {
+	overflow: hidden;
+}
+
+.flex {
+	overflow: hidden;
 }
 
 html {
