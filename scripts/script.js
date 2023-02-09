@@ -100,10 +100,11 @@ const darkmodeBtn = document.querySelector(".dark-mode");
 const darkenItems = document.querySelectorAll(".darken");
 const lightenItems = document.querySelectorAll(".lighten");
 const moonImg = document.querySelectorAll(".moon");
-const invertColor = document.querySelectorAll("#invert-color");
 const darkenText = document.querySelectorAll(".darken-text");
 const darkenishText = document.querySelectorAll(".darkenish-text");
 const darkenBody = document.querySelectorAll(".darken-body");
+const removeHover = document.querySelectorAll("#remove-hover");
+const invertColor = document.querySelectorAll("#invert-color");
 
 darkmodeBtn.addEventListener("click", darken);
 
@@ -124,15 +125,21 @@ function darken() {
 	invertColor.forEach((item) => {
 		item.classList.toggle("invert");
 	});
-	// Changes the color of the Title text in the Contact Us Section
+	// Changes the color of text to black
 	darkenText.forEach((item) => {
 		item.classList.toggle("dark-text");
 	});
-	// Changes the color of the body text in the Contact Us Section
+	// Changes the color of text to grayish black
 	darkenishText.forEach((item) => {
 		item.classList.toggle("darkish-text");
 	});
+	// Changes the color of the body to a lighter gray
 	darkenBody.forEach((item) => {
 		item.classList.toggle("dark-body");
+	});
+	// Changes the hover state of the nav bar
+	removeHover.forEach((item) => {
+		item.classList.toggle("hover:text-slate-200");
+		item.classList.toggle("hover:text-slate-700");
 	});
 }

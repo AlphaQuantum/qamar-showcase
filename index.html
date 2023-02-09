@@ -38,38 +38,38 @@
 
 <body class="bg-slate-50 lg:px-36 relative darken-body z-[-100]">
   <button
-    class="dark-mode dark lighten flex justify-center fixed right-2 bottom-4 min-w-[40px] min-h-[40px] rounded-full drop-shadow-lg z-10 md:right-12 md:bottom-10">
+    class="dark-mode dark lighten flex justify-center items-center fixed right-2 bottom-4 min-w-[40px] min-h-[40px] rounded-full drop-shadow-lg z-10 md:right-12 md:bottom-10">
     <img class="moon invert w-5" src="assets/light-dark/moon-solid.svg" alt="">
     <img class="moon w-5 hidden" src="assets/light-dark/sun-solid.svg" alt="">
   </button>
-  <nav class="backdrop-blur-lg drop-shadow-lg bg-gray-50/80 sm:bg-gray-50/10
+  <nav class="lighten dark backdrop-blur-lg drop-shadow-lg bg-gray-50/80 sm:bg-gray-50/10
       top-0 left-0 right-0 z-10 sticky">
     <div class="flex items-center px-4">
-      <div class="text-slate-900 text-2xl font-semibold px-6 karla lg:px-9">
+      <div class="text-2xl font-semibold px-6 karla lg:px-9">
         <a href="#">
           Qamar
         </a>
       </div>
       <div class="md:block md:flex hidden md:items-center">
-        <a href="#Ingredients" class="px-6 karla lg:px-9 py-3 text-xl
-            text-gray-700 font-medium hover:text-slate-900 focus:outline-none
-            focus:text-white focus:bg-slate-100/10 focus:text-black
-            hover:bg-slate-300/10 focus:bg-slate-500/10">Ingredients</a>
-        <a href="#benefits" class=" px-6 karla lg:px-9 py-3 text-xl
-            text-gray-700 font-medium hover:text-slate-900 focus:outline-none
-            focus:text-white focus:bg-slate-100/10 focus:text-black
-            hover:bg-slate-300/10 focus:bg-slate-500/10">Benefits</a>
-        <a href="#flavours" class="px-6 karla lg:px-9 py-3 text-xl
-            text-gray-700 font-medium hover:text-slate-900 focus:outline-none
-            focus:text-white focus:bg-slate-100/10 focus:text-black
-            hover:bg-slate-300/10 focus:bg-slate-500/10">Flavours</a>
-        <a href="#contact" class=" px-6 karla lg:px-9 py-3 text-xl
-            text-gray-700 font-medium hover:text-slate-900 focus:outline-none
-            focus:text-white focus:bg-slate-100/10 focus:text-black
-            hover:bg-slate-300/10 focus:bg-slate-500/10">Contact Us</a>
+        <a id="remove-hover" href="#benefits" class=" px-6 karla lg:px-9 py-3 text-xl
+             font-medium hover:text-slate-200 focus:outline-none
+            focus:text-white focus:bg-slate-100/10
+            hover:bg-slate-300/10 focus:bg-slate-500/10">Why Us</a>
+        <a id="remove-hover" href="#Ingredients" class="px-6 karla lg:px-9 py-3 text-xl
+            font-medium hover:text-slate-200 focus:outline-none
+           focus:text-white focus:bg-slate-100/10
+           hover:bg-slate-300/10 focus:bg-slate-500/10">How we concoct it</a>
+        <a id="remove-hover" href="#flavours" class="px-6 karla lg:px-9 py-3 text-xl
+             font-medium hover:text-slate-200 focus:outline-none
+            focus:text-white focus:bg-slate-100/10
+            hover:bg-slate-300/10 focus:bg-slate-500/10">Our Collection of Potions</a>
+        <a id="remove-hover" href="#contact" class=" px-6 karla lg:px-9 py-3 text-xl
+             font-medium hover:text-slate-200 focus:outline-none
+            focus:text-white focus:bg-slate-100/10
+            hover:bg-slate-300/10 focus:bg-slate-500/10">Find Us</a>
       </div>
       <div class="block md:hidden float-right ml-auto">
-        <button class="flex items-center px-6 lg:px-9 py-3 my-3 border rounded
+        <button class="flex items-center px-6 lg:px-9 py-3 my-3 border-2 rounded
             text-gray-500 border-gray-600 hover:backdrop-blur-md
             hover:border-black hover:shadow-inner" id="menu-button">
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -81,23 +81,23 @@
       </div>
     </div>
     <div class="md:hidden md:none absolute w-full drop-shadow-lg
-          backdrop-blur-lg bg-gray-50/80" id="nav-items-dropdown">
+          backdrop-blur-lg lighten dark" id="nav-items-dropdown">
       <div class="px-2 pt-2 pb-3">
         <div class="flex flex-col items-stretch">
-          <a href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
-                text-gray-700 font-medium hover:text-slate-900
+          <a id="remove-hover" href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
+                font-medium hover:text-slate-200
                 focus:outline-none
-                focus:text-white focus:bg-slate-100/10 focus:text-black
+                focus:bg-slate-100/10
                 hover:bg-slate-300/10 focus:bg-slate-500/10">Home</a>
-          <a href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
-                text-gray-700 font-medium hover:text-slate-900
+          <a id="remove-hover" href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
+                font-medium hover:text-slate-200
                 focus:outline-none
-                focus:text-white focus:bg-slate-100/10 focus:text-black
+                focus:bg-slate-100/10
                 hover:bg-slate-300/10 focus:bg-slate-500/10">Features</a>
-          <a href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
-                text-gray-700 font-medium hover:text-slate-900
+          <a id="remove-hover" href="#" class="block karla pl-8 lg:px-9 py-3 text-xl
+                font-medium hover:text-slate-200
                 focus:outline-none
-                focus:text-white focus:bg-slate-100/10 focus:text-black
+                focus:bg-slate-100/10
                 hover:bg-slate-300/10 focus:bg-slate-500/10">Pricing</a>
         </div>
       </div>
@@ -111,10 +111,10 @@
       <rect width="1100" height="1100" rx="40" ry="40" fill="#cccccc" />
     </svg> -->
 
-    <img class="hidden absolute w-1/2 -right-36 max-h-[90vh] lg:block" src="assets/Rectangle.svg" alt="">
+    <img class="hidden  absolute w-1/2 -right-36 max-h-[90vh] lg:block" src="assets/Rectangle.svg" alt="">
 
     <div
-      class="flex flex-wrap text-center items-center justify-center lg:flex-row lg:items-center 2xl:text-left lg:mx-12">
+      class="flex flex-wrap text-center items-center justify-center mt-12 lg:mt-0 lg:flex-row lg:items-center 2xl:text-left lg:mx-12">
       <div class="uppercase flex-auto ">
         <p class="text-[3.8rem] w-[101%] lg:text-6xl font-extrabold
                 open-sans">Travel the world <br> with one <span class=" animation"><span>sip</span>
@@ -141,64 +141,11 @@
     </div>
   </section>
 
-  <!-- Carousel -->
-  <section id="Ingredients" class="darken h-[100vh]">
-    <div class="relative flex flex-col uppercase font-bold text-center
-            items-center justify-center overflow-hidden">
-      <div class="text-2xl mt-5 lg:text-3xl lg:mb-20 lg:mb-0">
-        What we have canned up
-      </div>
-      <img id="invert-color" class="mb-10 w-96 lg:mb-20 lg:w-1/2" src="assets/Line 3.svg" alt="">
-      <button id="prev"
-        class="darken absolute z-[1] bg-slate-50 w-5 min-h-[400px] top-[20%] left-[0] lg:w-10 lg:top-[25%]">
-        <img id="invert-color" src="assets/Arrow-left.svg" alt="">
-      </button>
-      <div class="flex flex-row items-center justify-center gap-20
-              text-xl min-w-max" id="carousel">
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Mango.png" alt="">
-          <p>Mango</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Orange.png" alt="">
-          <p>Orange</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Coffee Beans.png" alt="">
-          <p>Coffee</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Blueberries.png" alt="">
-          <p>Blueberries</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Mint-leaves.png" alt="">
-          <p>Mint Leaves</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Lime.png" alt="">
-          <p>Lime</p>
-        </div>
-        <div class="flex-none karla">
-          <img class="w-80 h-60" src="assets/images/Raspberries.png" alt="">
-          <p>Raspberries</p>
-        </div>
-      </div>
-      <button id="next" class="darken absolute z-[1] bg-slate-50 w-5 min-h-[400px] top-[20%]
-              right-[0] lg:w-10 lg:top-[25%]">
-        <img id="invert-color" src="assets/Arrow-right.svg" alt="">
-      </button>
-      <div class="grid grid-cols-2 gap-4">
-      </div>
-    </div>
-    </div>
-  </section>
-
   <!-- Why Choose Us -->
-  <section id="benefits" class="darken light drop-shadow-lg">
+  <section id="benefits" class="darken light drop-shadow-lg min-h-[100vh]">
     <div class="flex flex-col uppercase font-bold text-center items-center
           justify-center pt-1">
-      <div class="mb-5 mt-16 text-3xl">
+      <div class="mb-5 pt-14 text-3xl">
         Why choose us
       </div>
       <div class="grid gap-20 grid-cols-1 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20 xl:grid-cols-3
@@ -356,20 +303,75 @@
     </div>
   </section>
 
+  <!-- Carousel -->
+  <section id="Ingredients" class="darken min-h-[75vh] py-10">
+    <div class="relative flex flex-col uppercase font-bold text-center
+            items-center justify-center overflow-hidden">
+      <div class="text-2xl mt-5 lg:text-3xl lg:mb-20 lg:mb-0">
+        What we have canned up
+      </div>
+      <img id="invert-color" class="mb-10 w-96 lg:mb-20 lg:w-1/2" src="assets/Line 3.svg" alt="">
+      <button id="prev"
+        class="darken absolute z-[1] bg-slate-50 w-5 transition-none min-h-[400px] top-[20%] left-[0] lg:w-10 lg:top-[25%]">
+        <img id="invert-color" src="assets/Arrow-left.svg" alt="">
+      </button>
+      <div class="flex flex-row items-center justify-center gap-20
+              text-xl min-w-max" id="carousel">
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Mango.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Orange.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Coffee Beans.png" alt="">
+          <p>Coffee</p>
+        </div>
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Blueberries.png" alt="">
+          <p>Blueberries</p>
+        </div>
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Mint-leaves.png" alt="">
+          <p>Mint Leaves</p>
+        </div>
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Lime.png" alt="">
+          <p>Lime</p>
+        </div>
+        <div class="flex-none karla">
+          <img class="w-80 h-60" src="assets/images/Raspberries.png" alt="">
+          <p>Raspberries</p>
+        </div>
+      </div>
+      <button id="next"
+        class="darken absolute z-[1] bg-slate-50 w-5 transition-none min-h-[400px] top-[20%] right-[0] lg:w-10 lg:top-[25%]">
+        <img id="invert-color" src="assets/Arrow-right.svg" alt="">
+      </button>
+      <div class="grid grid-cols-2 gap-4">
+      </div>
+    </div>
+    </div>
+  </section>
+
   <!-- Grid Can -->
-  <section class="darken relative min-h-[60vh] flex justify-center items-center
+  <section class="darken relative min-h-[60vh] flex justify-center items-center z-[-1]
         lg:h-[100vh]">
-    <img class="hidden absolute w-1/2 -z-10 -left-[15rem] -top-[22rem]
-          lg:block" src="assets/Big-Rectangle left.svg" alt="">
-    <div class="grid grid-cols-2">
-      <div class="row-span-2">
-        <img class="" src="assets/Can Grid Red BIG.png" alt="">
+    <img class="hidden absolute w-1/2 -left-[17rem] lg:block" src="assets/Big-Rectangle left.svg" alt="">
+    <div class="grid grid-cols-2 z-[2] w-2/3">
+      <div class="h-min border-8 border-b-0 border-r-4 border-[#3f586a]">
+        <img class="" src="assets/images/grid_citrus.png" alt="">
       </div>
-      <div class="h-min">
-        <img class="" src="assets/Can Grid Purple BIG.png" alt="">
+      <div class="h-min border-8 border-b-0 border-l-4 border-[#3f586a]">
+        <img class="" src="assets/images/grid_coffee.png" alt="">
       </div>
-      <div class="h-min">
-        <img class="" src="assets/Can Grid Yellow BIG.png" alt="">
+      <div class="h-min border-8 border-r-4 border-[#3f586a]">
+        <img class="" src="assets/images/grid_moroccan.png" alt="">
+      </div>
+      <div class="h-min border-8 border-l-4 border-[#3f586a]">
+        <img class="" src="assets/images/grid_berries.png" alt="">
       </div>
     </div>
   </section>
