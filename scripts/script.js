@@ -11,26 +11,26 @@ nextBtn.addEventListener("click", () => {
 	if (
 		carouselTransform === "none" ||
 		carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, 960, 0)"
+		carouselTransform === "matrix(1, 0, 0, 1, -400, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, 400, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, 800, 0)"
 	) {
 		index--;
-		carousel.style.setProperty("transform", `translateX(${index * 480}px)`);
+		carousel.style.setProperty("transform", `translateX(${index * 400}px)`);
 	} else if (viewportWidth < 1340) {
 		if (
 			carouselTransform === "none" ||
 			carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -960, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 1440, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 960, 0)"
+			carouselTransform === "matrix(1, 0, 0, 1, -400, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -800, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 1200, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 400, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 800, 0)"
 		) {
 			index--;
 			carousel.style.setProperty(
 				"transform",
-				`translateX(${index * 480}px)`
+				`translateX(${index * 400}px)`
 			);
 			carouselTransform = carouselStyles.getPropertyValue("transform");
 			console.log(carouselTransform);
@@ -49,28 +49,28 @@ prevBtn.addEventListener("click", () => {
 	if (
 		carouselTransform === "none" ||
 		carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
-		carouselTransform === "matrix(1, 0, 0, 1, -960, 0)"
+		carouselTransform === "matrix(1, 0, 0, 1, 400, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, -400, 0)" ||
+		carouselTransform === "matrix(1, 0, 0, 1, -800, 0)"
 	) {
 		index++;
-		carousel.style.setProperty("transform", `translateX(${index * 480}px)`);
+		carousel.style.setProperty("transform", `translateX(${index * 400}px)`);
 		carouselTransform = carouselStyles.getPropertyValue("transform");
 		console.log(carouselTransform);
 	} else if (viewportWidth < 1340) {
 		if (
 			carouselTransform === "none" ||
 			carouselTransform === "matrix(1, 0, 0, 1, 0, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 480, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, 960, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -1440, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -480, 0)" ||
-			carouselTransform === "matrix(1, 0, 0, 1, -960, 0)"
+			carouselTransform === "matrix(1, 0, 0, 1, 400, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, 800, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -1200, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -400, 0)" ||
+			carouselTransform === "matrix(1, 0, 0, 1, -800, 0)"
 		) {
 			index++;
 			carousel.style.setProperty(
 				"transform",
-				`translateX(${index * 480}px)`
+				`translateX(${index * 400}px)`
 			);
 			carouselTransform = carouselStyles.getPropertyValue("transform");
 			console.log(carouselTransform);
@@ -93,3 +93,53 @@ document
 document
 	.querySelectorAll("a")
 	.forEach((img) => (img.ondragstart = () => false));
+
+// Dark mode
+
+const darkmodeBtn = document.querySelector(".dark-mode");
+const darkenItems = document.querySelectorAll(".darken");
+const lightenItems = document.querySelectorAll(".lighten");
+const moonImg = document.querySelectorAll(".moon");
+const darkenText = document.querySelectorAll(".darken-text");
+const darkenishText = document.querySelectorAll(".darkenish-text");
+const darkenBody = document.querySelectorAll(".darken-body");
+const removeHover = document.querySelectorAll("#remove-hover");
+const invertColor = document.querySelectorAll("#invert-color");
+
+darkmodeBtn.addEventListener("click", darken);
+
+function darken() {
+	// Darkens bg and lightens text
+	darkenItems.forEach((item) => {
+		item.classList.toggle("dark");
+	});
+	// Lightens bg and darkens text
+	lightenItems.forEach((item) => {
+		item.classList.toggle("light");
+	});
+	// Changes the icon for the dark-mode button
+	moonImg.forEach((item) => {
+		item.classList.toggle("hidden");
+	});
+	// inverts the color of the images
+	invertColor.forEach((item) => {
+		item.classList.toggle("invert");
+	});
+	// Changes the color of text to black
+	darkenText.forEach((item) => {
+		item.classList.toggle("dark-text");
+	});
+	// Changes the color of text to grayish black
+	darkenishText.forEach((item) => {
+		item.classList.toggle("darkish-text");
+	});
+	// Changes the color of the body to a lighter gray
+	darkenBody.forEach((item) => {
+		item.classList.toggle("dark-body");
+	});
+	// Changes the hover state of the nav bar
+	removeHover.forEach((item) => {
+		item.classList.toggle("hover:text-slate-200");
+		item.classList.toggle("hover:text-slate-700");
+	});
+}
