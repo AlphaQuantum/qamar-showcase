@@ -149,24 +149,3 @@ function darken() {
 		item.classList.toggle("hover:text-slate-700");
 	});
 }
-
-// Grid Can Zoom thingy
-
-const gridItems = document.querySelectorAll("#grid-item");
-
-gridItems.forEach((item) => {
-	item.addEventListener("mouseover", function () {
-		gridItems.forEach((otherItem) => {
-			otherItem.style.opacity = 0.5;
-		});
-		this.style.opacity = 1;
-		this.classList.add("active");
-	});
-
-	item.addEventListener("mouseout", function () {
-		gridItems.forEach((otherItem) => {
-			otherItem.style.opacity = 1;
-		});
-		this.classList.remove("active");
-	});
-});
