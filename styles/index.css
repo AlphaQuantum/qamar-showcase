@@ -115,14 +115,22 @@ img {
 	color: #5e5e5e !important;
 }
 
-.animation {
-	position: relative;
+@media (min-width: 1024px) {
+	.animation {
+		position: relative;
+	}
+
+	.animation span:nth-child(1) {
+		position: absolute;
+	}
 }
 
-.animation span:nth-child(1) {
-	position: absolute;
+@media (max-width: 1024px) {
+	.animation span:nth-child(2) {
+		position: absolute;
+		transform: translate(-100%, 0);
+	}
 }
-
 .animation span:nth-child(2) {
 	animation: animate 4s ease-in-out infinite;
 }
