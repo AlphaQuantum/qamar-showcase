@@ -75,6 +75,7 @@ img {
 .darkish-text {
 	color: #2e2e2e !important;
 }
+
 #carousel {
 	transition: transform 0.7s ease-in-out;
 	/* border: 1px solid black; */
@@ -84,26 +85,85 @@ img {
 	transition: transform 1s ease;
 }
 
-#can-grid div:nth-child(1):hover {
+#can-grid #grid-item:nth-child(1) img:hover {
 	transform: translate(50%, 50%) scale(2);
 	z-index: 10;
 	cursor: pointer;
 }
 
-#can-grid div:nth-child(2):hover {
+#can-grid #grid-item:nth-child(2) img:hover {
 	transform: translate(-50%, 50%) scale(2);
 	z-index: 10;
 	cursor: pointer;
 }
 
-#can-grid div:nth-child(3):hover {
+#can-grid #grid-item:nth-child(3) img:hover {
 	transform: translate(50%, -50%) scale(2);
 	z-index: 10;
 	cursor: pointer;
 }
 
-#can-grid div:nth-child(4):hover {
+#can-grid #grid-item:nth-child(4) img:hover {
 	transform: translate(-50%, -50%) scale(2);
 	z-index: 10;
 	cursor: pointer;
+}
+
+/* Jumbotron Animation */
+
+.animation-text-color {
+	color: #5e5e5e !important;
+}
+
+.animation {
+	position: relative;
+}
+
+.animation span:nth-child(1) {
+	position: absolute;
+}
+
+.animation span:nth-child(2) {
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0 55%,
+			8% 48%,
+			16% 43%,
+			25% 42%,
+			38% 44%,
+			47% 48%,
+			55% 51%,
+			63% 49%,
+			73% 45%,
+			82% 43%,
+			93% 44%,
+			100% 48%,
+			100% 100%,
+			0 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0 39%,
+			8% 46%,
+			16% 48%,
+			25% 46%,
+			33% 44%,
+			43% 39%,
+			54% 37%,
+			64% 41%,
+			73% 46%,
+			84% 48%,
+			93% 46%,
+			100% 42%,
+			100% 100%,
+			0 100%
+		);
+	}
 }
