@@ -49,10 +49,6 @@ button {
 	transition: all 0.3s ease-in-out;
 }
 
-img {
-	transition: all 1s ease-in-out;
-}
-
 .dark-body {
 	background-color: #3b3b3b !important;
 }
@@ -81,7 +77,7 @@ img {
 	/* border: 1px solid black; */
 }
 
-#grid-item {
+#grid-item img {
 	transition: transform 1s ease;
 }
 
@@ -132,14 +128,14 @@ img {
 	}
 }
 .animation span:nth-child(2) {
-	animation: animate 4s ease-in-out infinite;
+	animation: animate 1.5s ease-in-out infinite;
 }
 
 @keyframes animate {
 	0%,
 	100% {
 		clip-path: polygon(
-			0 55%,
+			0 50%,
 			8% 48%,
 			16% 43%,
 			25% 42%,

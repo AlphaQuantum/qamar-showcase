@@ -121,18 +121,19 @@
   </nav>
 
   <!-- Jumbotron -->
-  <section class="darken relative overflow-x-hidden" id="home">
+  <section class="darken relative overflow-x-hidden xl:overflow-hidden" id="home">
     <!-- <svg class="hidden absolute w-1/2 transform rotate-45 -z-10 my-auto
           -right-1/4 bottom-1/3 md:bottom-[10%] scale-150 md:scale-100" viewBox="0 0 1100 1100" style="display:block">
       <rect width="1100" height="1100" rx="40" ry="40" fill="#cccccc" />
     </svg> -->
-    <img class="hidden absolute -right-6 max-h-[90vh] lg:block" src="assets/Rectangle.svg" alt="">
+    <img class="transform-none hidden absolute -right-[43rem] lg:block lg:h-[90%] xl:h-auto xl:-right-[70rem]"
+      src="assets/Big-Rectangle right.svg" alt="">
     <div class="flex flex-wrap text-center items-center justify-center mt-12
           lg:mt-0 lg:flex-row lg:items-center 2xl:text-left lg:mx-12">
       <div class="uppercase flex-auto ">
         <p class="text-[3.8rem] w-[101%] lg:text-6xl font-extrabold
               open-sans">Travel the world <br> with one <span class="
-                animation"><span>sip</span>
+                animation overflow-hidden"><span>sip</span>
             <span class="animation-text-color">sip</span>
           </span></p>
         <div class="flex flex-col gap-x-6 justify-center items-center
@@ -169,7 +170,10 @@
         <!-- Grid Item #1 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max h-64 pr-3">
           <div class="flex flex-row items-center">
-            <img class="p-3 w-14 " src="assets/Rectangle 38 (small).svg" alt="">
+            <div class="relative">
+              <img class=" p-3 w-14" src="assets/Rectangle 38 (small).svg" alt="">
+              <img class="absolute top-[30%] left-[33%] w-[20px]" src="assets/Sugar-icon.svg" alt="">
+            </div>
             <div>
               <p class="text-left text-2xl karla">Sugar Free</p>
             </div>
@@ -184,7 +188,10 @@
         <!-- Grid Item #2 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max h-64 pr-3">
           <div class="flex flex-row items-center">
-            <img class="p-3 w-14 " src="assets/Rectangle 38 (small).svg" alt="">
+            <div class="relative">
+              <img class=" p-3 w-14" src="assets/Rectangle 38 (small).svg" alt="">
+              <img class="absolute top-[32%] left-[32%] w-[20px]" src="assets/Coffee-icon.svg" alt="">
+            </div>
             <div>
               <p class="text-left text-2xl karla">
                 Caffienated
@@ -202,7 +209,10 @@
         <!-- Grid Item #3 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max h-64 pr-3">
           <div class="flex flex-row items-center">
-            <img class="p-3 w-14 " src="assets/Rectangle 38 (small).svg" alt="">
+            <div class="relative">
+              <img class=" p-3 w-14" src="assets/Rectangle 38 (small).svg" alt="">
+              <img class="absolute top-[35%] left-[35%] w-[20px]" src="assets/Gluten-icon.svg" alt="">
+            </div>
             <div>
               <p class="text-left text-2xl karla">
                 Gluten Free
@@ -220,7 +230,10 @@
         <!-- Grid Item #4 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max h-64 pr-3">
           <div class="flex flex-row items-center">
-            <img class="p-3 w-14 " src="assets/Rectangle 38 (small).svg" alt="">
+            <div class="relative">
+              <img class=" p-3 w-14" src="assets/Rectangle 38 (small).svg" alt="">
+              <img class="absolute top-[30%] left-[30%] w-[20px]" src="assets/Lemon-icon.svg" alt="">
+            </div>
             <div>
               <p class="text-left text-2xl karla leading-7">
                 Naturally Flavoured
@@ -237,7 +250,10 @@
         <!-- Grid Item #5 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max h-64 pr-3">
           <div class="flex flex-row items-center">
-            <img class="p-3 w-14 " src="assets/Rectangle 38 (small).svg" alt="">
+            <div class="relative">
+              <img class=" p-3 w-14" src="assets/Rectangle 38 (small).svg" alt="">
+              <img class="absolute top-[27%] left-[33%] w-[20px] h-[25px]" src="assets/Calories-icon.svg" alt="">
+            </div>
             <div>
               <p class="text-left text-2xl karla">Low Calories</p>
             </div>
@@ -253,7 +269,10 @@
         <!-- Grid Item #6 -->
         <div class="bg-white rounded-lg drop-shadow-xl w-max h-64 pr-3">
           <div class="flex flex-row items-center">
-            <img class="p-3 w-14 " src="assets/Rectangle 38 (small).svg" alt="">
+            <div class="relative">
+              <img class=" p-3 w-14" src="assets/Rectangle 38 (small).svg" alt="">
+              <img class="absolute top-[30%] left-[33.5%] w-[20px]" src="assets/Protien-icon.svg" alt="">
+            </div>
             <div>
               <p class="text-left text-2xl karla leading-7">Protien</p>
             </div>
@@ -346,18 +365,39 @@
       items-center z-[-1]
       lg:h-[100vh]">
     <img class="hidden absolute w-1/2 -left-[17rem] lg:block" src="assets/Big-Rectangle left.svg" alt="">
-    <div id="can-grid" class="grid relative grid-cols-2 lg:w-1/2 overflow-visible">
-      <div id="grid-item" class="h-min border-t-8 border-l-8">
-        <img class="" src="assets/images/grid_citrus.png" alt="">
+    <div class="flex flex-row mx-20">
+      <div id="can-grid" class="grid relative grid-cols-2 min-w-[600px] overflow-visible justify-center content-center">
+        <div id="grid-item" class="h-min border-t-8 border-l-8">
+          <img class="" src="assets/images/grid_citrus.png" alt="">
+        </div>
+        <div id="grid-item" class="h-min border-t-8 border-r-8">
+          <img class="" src="assets/images/grid_berries.png" alt="">
+        </div>
+        <div id="grid-item" class="h-min border-b-8 border-l-8">
+          <img class="" src="assets/images/grid_moroccan.png" alt="">
+        </div>
+        <div id="grid-item" class="h-min border-b-8 border-r-8">
+          <img class="" src="assets/images/grid_coffee.png" alt="">
+        </div>
       </div>
-      <div id="grid-item" class="h-min border-t-8 border-r-8">
-        <img class="" src="assets/images/grid_berries.png" alt="">
-      </div>
-      <div id="grid-item" class="h-min border-b-8 border-l-8">
-        <img class="" src="assets/images/grid_moroccan.png" alt="">
-      </div>
-      <div id="grid-item" class="h-min border-b-8 border-r-8">
-        <img class="" src="assets/images/grid_coffee.png" alt="">
+      <div class="ml-20 text-xl">
+        <p class="font-bold text-3xl mb-5">
+          Our Origin
+        </p>
+        <p class="karla">
+          In the 1950s, shortly after the end of the second World War, the Ananas Family began brewing their drinks in a
+          small town in italy, soothing the hearts of the families torn by the war.
+          <br>
+          <br>
+          Originating from Morocco, they brought with them their expertise in brewing Moroccan Atay Tea and Arabian
+          Coffee. As their mention grew on the locals' tongues, they expanded their skills to encompass the towns
+          favourite lime and berry beverages.
+          <br>
+          <br>
+          Through tireless effort and dedication, we perfected our drinks, which have now become the
+          foundation of the exceptional beverages you enjoy today. Our drinks are pure and natural, crafted with the
+          same commitment to quality and authenticity as the Ananas family's original recipes.
+        </p>
       </div>
     </div>
   </section>
@@ -385,11 +425,11 @@
               Arabian Coffee with <br> fine powdered cardamom
             </div>
             <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
               <div class="font-bold text-2xl ml-5">
                 $1.99
               </div>
@@ -415,11 +455,11 @@
               Mix of Citrus fruits to acidify <br> your stomach... DIE
             </div>
             <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
               <div class="font-bold text-2xl ml-5">
                 $1.99
               </div>
@@ -445,11 +485,11 @@
               Idk the details of this <br> Anass can type it
             </div>
             <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
               <div class="font-bold text-2xl ml-5">
                 $1.99
               </div>
@@ -474,11 +514,11 @@
               Fruity Berries so you can <br> taste the natural sugar
             </div>
             <div class="flex flex-row">
-              <img class="w-5 drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
-              <img class="w-5 drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1 ml-5" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
+              <img class="max-w-[25px] max-h-[25px] drop-shadow-md mr-1" src="assets/Star.svg" alt="">
               <div class="font-bold text-2xl ml-5">
                 $1.99
               </div>
