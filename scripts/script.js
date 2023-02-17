@@ -105,6 +105,7 @@ const darkenishText = document.querySelectorAll(".darkenish-text");
 const darkenBody = document.querySelectorAll(".darken-body");
 const removeHover = document.querySelectorAll("#remove-hover");
 const invertColor = document.querySelectorAll("#invert-color");
+const animationColor = document.querySelector("#animation-text-color");
 
 darkmodeBtn.addEventListener("click", darken);
 
@@ -148,4 +149,6 @@ function darken() {
 		item.classList.toggle("hover:text-slate-200");
 		item.classList.toggle("hover:text-slate-700");
 	});
+	animationColor.classList.toggle("animation-text-color-dark");
+	animationColor.classList.toggle("animation-text-color-light");
 }

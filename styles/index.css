@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
-@import url("https://fonts.cdnfonts.com/css/a-awal-ramadhan");
 
 .open-sans {
 	font-family: "Open Sans", sans-serif;
@@ -17,7 +16,7 @@
 }
 
 .ramadhan {
-	font-family: "a Awal Ramadhan", sans-serif !important;
+	font-family: "A Awal Ramadhan";
 }
 
 .grid {
@@ -110,10 +109,40 @@ button {
 	cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+	#can-grid #grid-item:nth-child(1) img:active {
+		transform: translate(50%, 50%) scale(2);
+		z-index: 10;
+		cursor: pointer;
+	}
+
+	#can-grid #grid-item:nth-child(2) img:active {
+		transform: translate(-50%, 50%) scale(2);
+		z-index: 10;
+		cursor: pointer;
+	}
+
+	#can-grid #grid-item:nth-child(3) img:active {
+		transform: translate(50%, -50%) scale(2);
+		z-index: 10;
+		cursor: pointer;
+	}
+
+	#can-grid #grid-item:nth-child(4) img:active {
+		transform: translate(-50%, -50%) scale(2);
+		z-index: 10;
+		cursor: pointer;
+	}
+}
+
 /* Jumbotron Animation */
 
-.animation-text-color {
-	color: #5e5e5e !important;
+.animation-text-color-dark {
+	color: #646464 !important;
+}
+
+.animation-text-color-light {
+	color: #cecece !important;
 }
 
 @media (min-width: 1024px) {
