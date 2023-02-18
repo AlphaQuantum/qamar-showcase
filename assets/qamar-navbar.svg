@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="359.60358mm"
+   height="158.99654mm"
+   viewBox="0 0 359.60357 158.99654"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="qamar-navbar.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.38440306"
+     inkscape:cx="1394.3698"
+     inkscape:cy="87.14811"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6761" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect5217"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5213">
+      <path
+         id="lpe_path-effect5217"
+         style="fill:#5aff05;fill-opacity:1;stroke:none;stroke-width:1.01;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+         class="powerclip"
+         d="M 224.25571,-43.429916 H 443.49568 V 175.81227 H 224.25571 Z M 440.42593,63.763991 A 101.21416,101.21416 0 0 0 337.93979,-35.501568 101.21416,101.21416 0 0 0 238.01825,66.345116 101.21416,101.21416 0 0 0 339.22127,166.91852 101.21416,101.21416 0 0 0 440.44239,66.363327" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.076464,-23.765552)">
+    <g
+       id="g6761"
+       style="fill:#ffffff">
+      <g
+         aria-label="QAMAR"
+         id="text436-2-1"
+         style="font-size:65.785px;font-family:Aldhabi;-inkscape-font-specification:Aldhabi;letter-spacing:-2.46694px;fill:#ffffff;stroke-width:3.91602;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         transform="matrix(1.9730924,0,0,1.9130305,1.5041953,-105.29988)">
+        <path
+           d="m 40.776485,85.181103 q 3.212159,0 7.002505,1.991538 3.469131,1.927295 3.533375,3.983076 v 23.898463 q 0,4.88248 -4.882481,8.35161 -0.578189,0.38546 -1.092134,0.70667 v 0.51395 q 0,5.13945 2.890943,7.64493 1.413349,1.15638 3.726103,2.31276 l -2.826699,3.79035 q -6.424317,-1.0279 -9.572232,-4.88249 -1.863052,-2.31275 -1.863052,-5.01096 v -2.18427 h -0.321216 q -3.212158,0 -7.002505,-1.99154 -3.469131,-1.92729 -3.533374,-3.98307 V 96.359414 q 0,-4.946724 4.818237,-8.351612 4.111563,-2.826699 9.12253,-2.826699 z m 2.955186,5.653399 q -7.644937,0 -8.994044,5.010967 -0.385459,1.349106 -0.385459,3.083672 v 21.714189 q 7.773424,0 9.058287,-5.26794 0.321216,-1.28486 0.321216,-2.89094 z"
+           style="font-weight:bold;font-family:'a Awal Ramadhan';-inkscape-font-specification:'a Awal Ramadhan Bold';fill:#ffffff"
+           id="path6752" />
+        <path
+           d="m 69.467482,88.77872 q -5.653399,2.698213 -7.387965,6.167344 -1.156377,2.441241 -1.156377,6.103106 v 9.70071 q 0,1.9273 2.055782,2.69822 0.770918,0.32121 1.606079,0.32121 h 4.882481 z m 7.580693,37.51801 q -4.368535,0 -6.552803,-2.89094 -1.02789,-1.4776 -1.02789,-3.08367 v -3.08368 q -2.184268,2.18427 -5.26794,2.24851 h -3.147915 v 2.12003 q 0,5.13945 -5.524913,8.15888 -2.44124,1.28486 -5.267939,1.79881 l -2.8267,-3.79035 q 4.497022,-2.18426 5.781885,-5.07521 0.835161,-1.92729 0.835161,-4.88248 V 98.479438 q 0,-7.130991 6.809776,-11.306797 2.890943,-1.670322 6.295831,-2.44124 l 2.312754,3.147915 v -0.899405 l 7.580693,1.863052 z"
+           style="font-weight:bold;font-family:'a Awal Ramadhan';-inkscape-font-specification:'a Awal Ramadhan Bold';fill:#ffffff"
+           id="path6749" />
+        <path
+           d="m 100.53548,85.11686 q 4.30429,0 6.48856,2.890942 0.19273,0.256973 0.32121,0.449702 1.22062,-2.762456 3.79035,-3.276401 0.4497,-0.06424 0.83516,-0.06424 h 2.56973 q 4.36853,0 6.5528,2.890942 1.02789,1.477593 1.02789,3.083672 v 28.780933 q 0,5.2037 3.08367,7.70918 1.28487,0.96365 3.59762,2.12003 l -2.8267,3.91883 q -6.36007,-1.02789 -9.50799,-4.88248 -1.92729,-2.31275 -1.92729,-5.07521 v -0.0642 -30.451261 q 0,-1.477593 -1.73457,-2.120025 -0.57819,-0.192729 -1.22062,-0.192729 h -3.46913 v 35.462225 l -7.58069,-5.97461 V 93.147256 q 0,-1.41335 -1.73457,-2.055782 -0.642431,-0.256972 -1.284863,-0.256972 h -3.469131 v 26.275458 q 0,4.68975 -4.497022,7.58069 -1.927295,1.15638 -4.111563,1.60608 l -2.826699,-3.79035 q 3.212158,-2.56972 3.726104,-6.74553 0.128486,-1.15638 0.128486,-2.56973 V 89.356909 q -2.569727,1.02789 -2.569727,4.432778 l -7.580693,-2.569726 q 1.734565,-4.689752 7.195234,-5.781886 1.41335,-0.321215 2.955186,-0.321215 l 7.323721,2.44124 q 1.541836,-2.376997 4.175806,-2.44124 z"
+           style="font-weight:bold;font-family:'a Awal Ramadhan';-inkscape-font-specification:'a Awal Ramadhan Bold';fill:#ffffff"
+           id="path6746" />
+        <path
+           d="m 140.27629,88.77872 q -5.65339,2.698213 -7.38796,6.167344 -1.15638,2.441241 -1.15638,6.103106 v 9.70071 q 0,1.9273 2.05578,2.69822 0.77092,0.32121 1.60608,0.32121 h 4.88248 z m 7.5807,37.51801 q -4.36854,0 -6.5528,-2.89094 -1.0279,-1.4776 -1.0279,-3.08367 v -3.08368 q -2.18426,2.18427 -5.26793,2.24851 h -3.14792 v 2.12003 q 0,5.13945 -5.52491,8.15888 -2.44124,1.28486 -5.26794,1.79881 l -2.8267,-3.79035 q 4.49702,-2.18426 5.78188,-5.07521 0.83516,-1.92729 0.83516,-4.88248 V 98.479438 q 0,-7.130991 6.80978,-11.306797 2.89094,-1.670322 6.29583,-2.44124 l 2.31275,3.147915 v -0.899405 l 7.5807,1.863052 z"
+           style="font-weight:bold;font-family:'a Awal Ramadhan';-inkscape-font-specification:'a Awal Ramadhan Bold';fill:#ffffff"
+           id="path6743" />
+        <path
+           d="m 157.14655,126.29673 v -6.5528 -24.219677 -0.128487 l 7.64493,-1.991538 v 0.128487 9.893445 h 5.13946 q 1.99154,0 2.69821,-1.79881 0.25697,-0.64243 0.25697,-1.22062 v -4.818234 q 0,-3.212158 -4.75399,-4.753994 -2.50548,-0.835162 -5.33218,-0.835162 -5.84613,0 -7.70918,2.569727 -0.57819,0.899404 -0.57819,1.863052 l -7.5807,-2.569727 q 1.9273,-4.946724 9.70072,-6.424317 2.44124,-0.449702 5.07521,-0.449702 8.4801,0 14.06926,3.790347 4.68975,3.276402 4.75399,8.094639 v 2.698213 q -0.0642,3.983078 -6.68129,6.424318 7.19524,3.01943 8.0304,8.67283 0.0642,0.64243 0.0642,1.28486 v 7.13099 q 0,5.01097 2.89094,7.51645 1.41335,1.15638 3.79035,2.31276 l -2.76246,3.91883 q -6.29583,-0.96365 -9.57223,-4.81824 -1.92729,-2.377 -1.92729,-5.13945 v -11.7565 q 0,-3.34065 -3.46914,-5.01097 -1.47759,-0.77092 -3.98307,-1.47759 l -2.12003,-3.79035 v 14.90442 0.57819 q 0,3.21215 -3.34064,4.94672 -1.99154,1.02789 -4.30429,1.02789 z"
+           style="font-weight:bold;font-family:'a Awal Ramadhan';-inkscape-font-specification:'a Awal Ramadhan Bold';fill:#ffffff"
+           id="path6740" />
+      </g>
+      <path
+         id="path6737"
+         transform="matrix(0.83881409,0,0,0.75986843,-178.22645,52.967232)"
+         clip-path="url(#clipPath5213)"
+         d="M 438.49568,66.872325 A 104.62109,104.62109 0 0 1 333.86739,170.81227 104.62109,104.62109 0 0 1 229.2578,66.8535 104.62109,104.62109 0 0 1 332.54277,-38.421411 104.62109,104.62109 0 0 1 438.47867,64.185493"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.044;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers" />
+    </g>
+  </g>
+</svg>
